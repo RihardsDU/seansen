@@ -1,0 +1,2050 @@
+[
+  {
+    "konsulent_id": "k001",
+    "prosjekter": [
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2020,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "Figma",
+          "Tjenestedesign"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k002",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2022,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Python",
+          "Databricks",
+          "dbt"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2020,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Databricks",
+          "Snowflake"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2019,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Databricks",
+          "dbt"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k003",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2022,
+        "rolle": "Smidig coach",
+        "teknologier": [
+          "Scrum",
+          "Endringsledelse",
+          "Jira"
+        ]
+      },
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2019,
+        "rolle": "Smidig coach",
+        "teknologier": [
+          "Endringsledelse",
+          "Prosjektledelse"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k004",
+    "prosjekter": [
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2025,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Snowflake",
+          "SQL"
+        ]
+      },
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2025,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Python",
+          "SQL"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2020,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Python",
+          "Kafka"
+        ]
+      },
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2019,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Airflow",
+          "scikit-learn"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k005",
+    "prosjekter": [
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2023,
+        "rolle": "Smidig coach",
+        "teknologier": [
+          "TOGAF",
+          "Endringsledelse",
+          "Jira"
+        ]
+      },
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2020,
+        "rolle": "Smidig coach",
+        "teknologier": [
+          "Kanban",
+          "Jira"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k007",
+    "prosjekter": [
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2025,
+        "rolle": "Plattformarkitekt",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "AKS",
+          "Azure DevOps"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2023,
+        "rolle": "DevOps-lead",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2021,
+        "rolle": "Plattformutvikler",
+        "teknologier": [
+          "Azure",
+          "ARM-maler"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k008",
+    "prosjekter": [
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2020,
+        "rolle": "Prosjektleder",
+        "teknologier": [
+          "Kanban",
+          "Git"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k010",
+    "prosjekter": [
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2024,
+        "rolle": "Fullstackutvikler",
+        "teknologier": [
+          "Java",
+          "C#",
+          "Git"
+        ]
+      },
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2019,
+        "rolle": "Fullstackutvikler",
+        "teknologier": [
+          "Java",
+          "C#",
+          "PostgreSQL"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k011",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2024,
+        "rolle": "Fullstackutvikler",
+        "teknologier": [
+          "Git",
+          "Vue",
+          "C#"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2019,
+        "rolle": "Fullstackutvikler",
+        "teknologier": [
+          "Git",
+          "Java"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k012",
+    "prosjekter": [
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2026,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Azure",
+          "AWS",
+          "Helm"
+        ]
+      },
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2025,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Azure DevOps",
+          "GitHub Actions"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k013",
+    "prosjekter": [
+      {
+        "kunde": "Havørn Shipping",
+        "bransje": "Maritim",
+        "år": 2019,
+        "rolle": "Interaksjonsdesigner",
+        "teknologier": [
+          "Universell utforming",
+          "Tjenestedesign",
+          "Brukertesting"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k015",
+    "prosjekter": [
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2025,
+        "rolle": "Skyarkitekt",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "Kubernetes"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2022,
+        "rolle": "Skyarkitekt",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "AWS"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k016",
+    "prosjekter": [
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2025,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "React",
+          ".NET"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2021,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "PostgreSQL",
+          ".NET"
+        ]
+      },
+      {
+        "kunde": "Skogly Skole-IT",
+        "bransje": "Offentlig sektor",
+        "år": 2019,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "PostgreSQL",
+          ".NET"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2018,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "PostgreSQL",
+          ".NET",
+          "React"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k017",
+    "prosjekter": [
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2025,
+        "rolle": "Virksomhetsarkitekt",
+        "teknologier": [
+          "Jira",
+          "Prosjektledelse"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2019,
+        "rolle": "Virksomhetsarkitekt",
+        "teknologier": [
+          "Endringsledelse",
+          "TOGAF",
+          "Gevinstrealisering"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k018",
+    "prosjekter": [
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2026,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Ansible",
+          "GCP",
+          "Grafana"
+        ]
+      },
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2023,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Ansible",
+          "GitHub Actions",
+          "GCP"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k019",
+    "prosjekter": [
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2021,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Angular",
+          "GraphQL"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k020",
+    "prosjekter": [
+      {
+        "kunde": "Skogly Skole-IT",
+        "bransje": "Offentlig sektor",
+        "år": 2022,
+        "rolle": "Tech lead",
+        "teknologier": [
+          "Spring Boot",
+          "Next.js"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k021",
+    "prosjekter": [
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2025,
+        "rolle": "Interaksjonsdesigner",
+        "teknologier": [
+          "HTML/CSS",
+          "Universell utforming",
+          "Brukertesting"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k022",
+    "prosjekter": [
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2026,
+        "rolle": "Sikkerhetsarkitekt",
+        "teknologier": [
+          "Microsoft Sentinel",
+          "Azure",
+          "Trusselmodellering"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2021,
+        "rolle": "Sikkerhetsarkitekt",
+        "teknologier": [
+          "Azure",
+          "Trusselmodellering"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2018,
+        "rolle": "Sikkerhetsarkitekt",
+        "teknologier": [
+          "Azure",
+          "ISO 27001"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k023",
+    "prosjekter": [
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2026,
+        "rolle": "DevOps",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "Docker"
+        ]
+      },
+      {
+        "kunde": "Havørn Shipping",
+        "bransje": "Maritim",
+        "år": 2024,
+        "rolle": "DevOps",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "Bash"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k024",
+    "prosjekter": [
+      {
+        "kunde": "Granitt Eiendom",
+        "bransje": "Eiendom",
+        "år": 2024,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Next.js",
+          "Spring Boot"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k025",
+    "prosjekter": [
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2019,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Terraform",
+          "Azure DevOps",
+          "Azure"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k026",
+    "prosjekter": [
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2026,
+        "rolle": "Tech lead",
+        "teknologier": [
+          "React",
+          "Next.js"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2021,
+        "rolle": "Tech lead",
+        "teknologier": [
+          "React",
+          "Next.js"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k027",
+    "prosjekter": [
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2026,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "Tjenestedesign",
+          "Universell utforming",
+          "Brukertesting"
+        ]
+      },
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2021,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "HTML/CSS",
+          "Designsystemer"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2020,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "Designsystemer",
+          "Universell utforming",
+          "Prototyping"
+        ]
+      },
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2019,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "HTML/CSS",
+          "Brukertesting",
+          "Tjenestedesign"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k028",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2025,
+        "rolle": "Backend",
+        "teknologier": [
+          "Kotlin",
+          "Spring Boot",
+          "Azure"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2023,
+        "rolle": "Tech lead plattform",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "Java"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k029",
+    "prosjekter": [
+      {
+        "kunde": "Skogly Skole-IT",
+        "bransje": "Offentlig sektor",
+        "år": 2023,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Grafana",
+          "Terraform",
+          "Docker"
+        ]
+      },
+      {
+        "kunde": "Granitt Eiendom",
+        "bransje": "Eiendom",
+        "år": 2021,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Helm",
+          "Grafana"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2020,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Prometheus",
+          "Docker"
+        ]
+      },
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2019,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Bash",
+          "Grafana",
+          "Pulumi"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k030",
+    "prosjekter": [
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2026,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Spark",
+          "Power BI",
+          "LLM/RAG"
+        ]
+      },
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2024,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Spark",
+          "Power BI"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2020,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Airflow",
+          "Power BI",
+          "Python"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k031",
+    "prosjekter": [
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2021,
+        "rolle": "Fullstackutvikler",
+        "teknologier": [
+          "React",
+          "C#",
+          "Next.js"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2019,
+        "rolle": "Fullstackutvikler",
+        "teknologier": [
+          "Angular",
+          "Vue"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k033",
+    "prosjekter": [
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2025,
+        "rolle": "Skyarkitekt",
+        "teknologier": [
+          "Azure",
+          "Azure Bicep",
+          "Azure DevOps"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2022,
+        "rolle": "Skyarkitekt",
+        "teknologier": [
+          "Azure",
+          "ARM-maler",
+          "Terraform"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k034",
+    "prosjekter": [
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2021,
+        "rolle": "Dataingeniør",
+        "teknologier": [
+          "Git",
+          "LLM/RAG"
+        ]
+      },
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2020,
+        "rolle": "Dataingeniør",
+        "teknologier": [
+          "Git",
+          "PyTorch"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2019,
+        "rolle": "Dataingeniør",
+        "teknologier": [
+          "Git",
+          "Snowflake"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2019,
+        "rolle": "Dataingeniør",
+        "teknologier": [
+          "Git",
+          "Spark",
+          "Snowflake"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k036",
+    "prosjekter": [
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2020,
+        "rolle": "Fullstackutvikler",
+        "teknologier": [
+          "Git",
+          "Vue",
+          "React"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k037",
+    "prosjekter": [
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2025,
+        "rolle": "Frontendutvikler",
+        "teknologier": [
+          "Git",
+          "Spring Boot",
+          "Kotlin"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k038",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2026,
+        "rolle": "SRE",
+        "teknologier": [
+          "Bash",
+          "GitHub Actions",
+          "Helm"
+        ]
+      },
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2025,
+        "rolle": "SRE",
+        "teknologier": [
+          "Prometheus",
+          "Bash",
+          "Pulumi"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k039",
+    "prosjekter": [
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2026,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "TOGAF",
+          "Git",
+          "Jira"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2023,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Git",
+          "TOGAF",
+          "Scrum"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2020,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Scrum",
+          "TOGAF"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2019,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Gevinstrealisering",
+          "TOGAF",
+          "Kanban"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k040",
+    "prosjekter": [
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2025,
+        "rolle": "Sikkerhetsarkitekt",
+        "teknologier": [
+          "Zero Trust",
+          "Azure",
+          "Trusselmodellering"
+        ]
+      },
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2018,
+        "rolle": "Sikkerhetsarkitekt",
+        "teknologier": [
+          "Zero Trust",
+          "OWASP"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k041",
+    "prosjekter": [
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2025,
+        "rolle": "Backend/plattform",
+        "teknologier": [
+          "Azure",
+          "C#",
+          "Terraform",
+          "AKS"
+        ]
+      },
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2023,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "C#",
+          ".NET",
+          "Azure Functions"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k042",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2022,
+        "rolle": "Dataingeniør",
+        "teknologier": [
+          "Kafka",
+          "scikit-learn",
+          "LLM/RAG"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k043",
+    "prosjekter": [
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2020,
+        "rolle": "Sikkerhetsrådgiver",
+        "teknologier": [
+          "Azure",
+          "Microsoft Sentinel"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2018,
+        "rolle": "Sikkerhetsrådgiver",
+        "teknologier": [
+          "OWASP",
+          "Azure"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k044",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2024,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Azure DevOps",
+          "Git"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k045",
+    "prosjekter": [
+      {
+        "kunde": "Granitt Eiendom",
+        "bransje": "Eiendom",
+        "år": 2026,
+        "rolle": "Sikkerhetsarkitekt",
+        "teknologier": [
+          "OWASP",
+          "Azure"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2026,
+        "rolle": "Sikkerhetsarkitekt",
+        "teknologier": [
+          "Entra ID",
+          "OWASP",
+          "ISO 27001"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k046",
+    "prosjekter": [
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2021,
+        "rolle": "Interaksjonsdesigner",
+        "teknologier": [
+          "Designsystemer",
+          "Git",
+          "Tjenestedesign"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k047",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2025,
+        "rolle": "Tjenestedesigner",
+        "teknologier": [
+          "HTML/CSS",
+          "Designsystemer",
+          "Brukertesting"
+        ]
+      },
+      {
+        "kunde": "Fjordlaks Havbruk",
+        "bransje": "Havbruk",
+        "år": 2021,
+        "rolle": "Tjenestedesigner",
+        "teknologier": [
+          "Figma",
+          "HTML/CSS"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2020,
+        "rolle": "Tjenestedesigner",
+        "teknologier": [
+          "Tjenestedesign",
+          "Figma",
+          "Universell utforming"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k048",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2024,
+        "rolle": "SRE",
+        "teknologier": [
+          "Docker",
+          "Pulumi"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2021,
+        "rolle": "SRE",
+        "teknologier": [
+          "Kubernetes",
+          "Pulumi"
+        ]
+      },
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2020,
+        "rolle": "SRE",
+        "teknologier": [
+          "Helm",
+          "Kubernetes",
+          "Pulumi"
+        ]
+      },
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2018,
+        "rolle": "SRE",
+        "teknologier": [
+          "Azure",
+          "Helm",
+          "Kubernetes"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k049",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2026,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Next.js",
+          "Node.js"
+        ]
+      },
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2023,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "C#",
+          "Node.js",
+          "React"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k050",
+    "prosjekter": [
+      {
+        "kunde": "Havørn Shipping",
+        "bransje": "Maritim",
+        "år": 2025,
+        "rolle": "Tjenestedesigner",
+        "teknologier": [
+          "Prototyping",
+          "Figma",
+          "Designsystemer"
+        ]
+      },
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2019,
+        "rolle": "Tjenestedesigner",
+        "teknologier": [
+          "Prototyping",
+          "Designsystemer",
+          "Figma"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2018,
+        "rolle": "Tjenestedesigner",
+        "teknologier": [
+          "Figma",
+          "Designsystemer",
+          "Prototyping"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k051",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2020,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Power BI",
+          "dbt",
+          "Databricks"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2020,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Databricks",
+          "SQL",
+          "Snowflake"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k052",
+    "prosjekter": [
+      {
+        "kunde": "Granitt Eiendom",
+        "bransje": "Eiendom",
+        "år": 2025,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "GitHub Actions"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k053",
+    "prosjekter": [
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2026,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "LLM/RAG",
+          "Databricks",
+          "Snowflake"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2024,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "LLM/RAG",
+          "Snowflake"
+        ]
+      },
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2018,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Snowflake",
+          "Spark",
+          "Databricks"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k054",
+    "prosjekter": [
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2022,
+        "rolle": "Data scientist",
+        "teknologier": [
+          "SQL",
+          "Spark"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k055",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2026,
+        "rolle": "Sikkerhetsrådgiver",
+        "teknologier": [
+          "Microsoft Sentinel",
+          "ISO 27001"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k056",
+    "prosjekter": [
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2025,
+        "rolle": "SRE",
+        "teknologier": [
+          "Bash",
+          "Linux"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2022,
+        "rolle": "SRE",
+        "teknologier": [
+          "Grafana",
+          "GitHub Actions",
+          "Bash"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2022,
+        "rolle": "SRE",
+        "teknologier": [
+          "Linux",
+          "Terraform",
+          "Grafana"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2020,
+        "rolle": "SRE",
+        "teknologier": [
+          "GitHub Actions",
+          "Bash",
+          "Terraform"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k058",
+    "prosjekter": [
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2026,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          ".NET",
+          "Vue"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2022,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Node.js",
+          "Spring Boot"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k059",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2019,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Docker",
+          "Java"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2018,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Docker",
+          "PostgreSQL",
+          "Angular"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k060",
+    "prosjekter": [
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2024,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Java",
+          "Spring Boot",
+          "C#"
+        ]
+      },
+      {
+        "kunde": "Granitt Eiendom",
+        "bransje": "Eiendom",
+        "år": 2021,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Java",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2019,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Kotlin",
+          "Spring Boot",
+          "C#"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k061",
+    "prosjekter": [
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2023,
+        "rolle": "Sikkerhetsrådgiver",
+        "teknologier": [
+          "Trusselmodellering",
+          "OWASP",
+          "Zero Trust"
+        ]
+      },
+      {
+        "kunde": "Havørn Shipping",
+        "bransje": "Maritim",
+        "år": 2018,
+        "rolle": "Sikkerhetsrådgiver",
+        "teknologier": [
+          "OWASP",
+          "Microsoft Sentinel",
+          "Azure"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k062",
+    "prosjekter": [
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2025,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Git",
+          "Docker",
+          "Spring Boot"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k063",
+    "prosjekter": [
+      {
+        "kunde": "Vestveien Logistikk",
+        "bransje": "Logistikk",
+        "år": 2026,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Spark",
+          "PyTorch",
+          "Databricks"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2024,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "PyTorch",
+          "Spark"
+        ]
+      },
+      {
+        "kunde": "Havørn Shipping",
+        "bransje": "Maritim",
+        "år": 2024,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "PyTorch",
+          "Spark"
+        ]
+      },
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2021,
+        "rolle": "ML-ingeniør",
+        "teknologier": [
+          "Databricks",
+          "PyTorch",
+          "Spark"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k064",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2025,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Terraform",
+          "AWS",
+          "EKS"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2023,
+        "rolle": "Plattformingeniør",
+        "teknologier": [
+          "Terraform",
+          "AWS",
+          "Go"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k066",
+    "prosjekter": [
+      {
+        "kunde": "Granitt Eiendom",
+        "bransje": "Eiendom",
+        "år": 2025,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Kotlin",
+          "Go"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k067",
+    "prosjekter": [
+      {
+        "kunde": "Granitt Eiendom",
+        "bransje": "Eiendom",
+        "år": 2023,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "AWS",
+          "Azure"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2021,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Terraform",
+          "Pulumi",
+          "Azure"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2019,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Terraform",
+          "AWS",
+          "Pulumi"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2019,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "Terraform",
+          "Grafana"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k068",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2026,
+        "rolle": "SRE",
+        "teknologier": [
+          "Azure DevOps",
+          "Docker",
+          "AWS"
+        ]
+      },
+      {
+        "kunde": "Havørn Shipping",
+        "bransje": "Maritim",
+        "år": 2018,
+        "rolle": "SRE",
+        "teknologier": [
+          "Terraform",
+          "Bash"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k069",
+    "prosjekter": [
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2026,
+        "rolle": "Frontendutvikler",
+        "teknologier": [
+          "GraphQL",
+          "Java",
+          "TypeScript"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k070",
+    "prosjekter": [
+      {
+        "kunde": "Statsbanken (intern rådgivning)",
+        "bransje": "Bank og finans",
+        "år": 2026,
+        "rolle": "Fagleder",
+        "teknologier": [
+          "Arkitektur",
+          "Azure"
+        ]
+      },
+      {
+        "kunde": "Polarstjerna Telekom",
+        "bransje": "Telekom",
+        "år": 2021,
+        "rolle": "Sjefsarkitekt",
+        "teknologier": [
+          "Terraform",
+          "Azure",
+          "AWS"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k071",
+    "prosjekter": [
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2023,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "React",
+          ".NET"
+        ]
+      },
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2023,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          ".NET",
+          "Git"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2021,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "React",
+          ".NET",
+          "Next.js"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k072",
+    "prosjekter": [
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2025,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "Figma",
+          "Designsystemer",
+          "Tjenestedesign"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2019,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "Prototyping",
+          "Designsystemer",
+          "Figma"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k073",
+    "prosjekter": [
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2023,
+        "rolle": "DevOps-ingeniør",
+        "teknologier": [
+          "AWS",
+          "Git",
+          "GCP"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k074",
+    "prosjekter": [
+      {
+        "kunde": "Nordlys Kraft",
+        "bransje": "Energi",
+        "år": 2025,
+        "rolle": "Data scientist",
+        "teknologier": [
+          "Python",
+          "Power BI",
+          "Airflow"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2020,
+        "rolle": "Data scientist",
+        "teknologier": [
+          "Airflow",
+          "Databricks"
+        ]
+      },
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2020,
+        "rolle": "Data scientist",
+        "teknologier": [
+          "scikit-learn",
+          "Python"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k075",
+    "prosjekter": [
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2026,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Jira",
+          "Prosjektledelse"
+        ]
+      },
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2026,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Scrum",
+          "Prosjektledelse"
+        ]
+      },
+      {
+        "kunde": "Lysthus Kommune",
+        "bransje": "Offentlig sektor",
+        "år": 2022,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Scrum",
+          "Prosjektledelse"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k076",
+    "prosjekter": [
+      {
+        "kunde": "Myrull Medtech",
+        "bransje": "Helse",
+        "år": 2026,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "Kotlin",
+          "React"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2022,
+        "rolle": "Backendutvikler",
+        "teknologier": [
+          "C#",
+          "Kotlin",
+          "PostgreSQL"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k077",
+    "prosjekter": [
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2023,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "Prototyping",
+          "Universell utforming",
+          "Tjenestedesign"
+        ]
+      },
+      {
+        "kunde": "Bølgen Bank",
+        "bransje": "Bank og finans",
+        "år": 2022,
+        "rolle": "UX-designer",
+        "teknologier": [
+          "Prototyping",
+          "Brukertesting",
+          "Git"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k078",
+    "prosjekter": [
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2025,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "TOGAF",
+          "Kanban"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2020,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Gevinstrealisering",
+          "Jira"
+        ]
+      },
+      {
+        "kunde": "Trøndelag Helsedata",
+        "bransje": "Helse",
+        "år": 2020,
+        "rolle": "Produkteier",
+        "teknologier": [
+          "Gevinstrealisering",
+          "Jira",
+          "TOGAF"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k079",
+    "prosjekter": [
+      {
+        "kunde": "Trolltind Retail",
+        "bransje": "Varehandel",
+        "år": 2025,
+        "rolle": "Frontendutvikler",
+        "teknologier": [
+          "Docker",
+          "React",
+          "C#"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2022,
+        "rolle": "Frontendutvikler",
+        "teknologier": [
+          "React",
+          "Vue",
+          "C#"
+        ]
+      }
+    ]
+  },
+  {
+    "konsulent_id": "k080",
+    "prosjekter": [
+      {
+        "kunde": "Sjøbris Energi",
+        "bransje": "Energi",
+        "år": 2019,
+        "rolle": "Skyarkitekt",
+        "teknologier": [
+          "Linux",
+          "Bash",
+          "Git"
+        ]
+      },
+      {
+        "kunde": "Kveldsol Media",
+        "bransje": "Media",
+        "år": 2019,
+        "rolle": "Skyarkitekt",
+        "teknologier": [
+          "Bash",
+          "GCP",
+          "Linux"
+        ]
+      },
+      {
+        "kunde": "Midtnorsk Forsikring",
+        "bransje": "Forsikring",
+        "år": 2019,
+        "rolle": "Skyarkitekt",
+        "teknologier": [
+          "Git",
+          "Prometheus"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,772 @@
+[
+  {
+    "id": "k001",
+    "nåværende_oppdrag": {
+      "kunde": "Midtnorsk Forsikring",
+      "rolle": "UX-designer",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k002",
+    "nåværende_oppdrag": {
+      "kunde": "Skogly Skole-IT",
+      "rolle": "ML-ingeniør",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k003",
+    "nåværende_oppdrag": {
+      "kunde": "Polarstjerna Telekom",
+      "rolle": "Smidig coach",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k004",
+    "nåværende_oppdrag": {
+      "kunde": "Nordlys Kraft",
+      "rolle": "ML-ingeniør",
+      "til": "2026-11-13"
+    },
+    "ledig_fra": "2026-11-16",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k005",
+    "nåværende_oppdrag": {
+      "kunde": "Nordlys Kraft",
+      "rolle": "Smidig coach",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k006",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Fullstackutvikler",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k007",
+    "nåværende_oppdrag": {
+      "kunde": "Nordlys Kraft",
+      "rolle": "Plattformarkitekt",
+      "til": "2026-10-30"
+    },
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k008",
+    "nåværende_oppdrag": {
+      "kunde": "Trolltind Retail",
+      "rolle": "Prosjektleder",
+      "til": "2027-01-29"
+    },
+    "ledig_fra": "2027-02-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k009",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Prosjektleder",
+      "til": "2026-10-23"
+    },
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k010",
+    "nåværende_oppdrag": {
+      "kunde": "Lysthus Kommune",
+      "rolle": "Fullstackutvikler",
+      "til": "2026-10-30"
+    },
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k011",
+    "nåværende_oppdrag": {
+      "kunde": "Nordlys Kraft",
+      "rolle": "Fullstackutvikler",
+      "til": "2026-10-30"
+    },
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k012",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k013",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k014",
+    "nåværende_oppdrag": {
+      "kunde": "Fjordlaks Havbruk",
+      "rolle": "ML-ingeniør",
+      "til": "2026-10-30"
+    },
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k015",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Skyarkitekt",
+      "til": "2027-01-08"
+    },
+    "ledig_fra": "2027-01-11",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k016",
+    "nåværende_oppdrag": {
+      "kunde": "Havørn Shipping",
+      "rolle": "Backendutvikler",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k017",
+    "nåværende_oppdrag": {
+      "kunde": "Nordlys Kraft",
+      "rolle": "Virksomhetsarkitekt",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k018",
+    "nåværende_oppdrag": {
+      "kunde": "Bølgen Bank",
+      "rolle": "DevOps-ingeniør",
+      "til": "2027-02-12"
+    },
+    "ledig_fra": "2027-02-15",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k019",
+    "nåværende_oppdrag": {
+      "kunde": "Bølgen Bank",
+      "rolle": "Backendutvikler",
+      "til": "2026-10-23"
+    },
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k020",
+    "nåværende_oppdrag": {
+      "kunde": "Skogly Skole-IT",
+      "rolle": "Tech lead",
+      "til": "2027-01-15"
+    },
+    "ledig_fra": "2027-01-18",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k021",
+    "nåværende_oppdrag": {
+      "kunde": "Granitt Eiendom",
+      "rolle": "Interaksjonsdesigner",
+      "til": "2027-01-15"
+    },
+    "ledig_fra": "2027-01-18",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k022",
+    "nåværende_oppdrag": {
+      "kunde": "Kveldsol Media",
+      "rolle": "Sikkerhetsarkitekt",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k023",
+    "nåværende_oppdrag": {
+      "kunde": "Fjordlaks Havbruk",
+      "rolle": "DevOps",
+      "til": "2026-11-13"
+    },
+    "ledig_fra": "2026-11-16",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k024",
+    "nåværende_oppdrag": {
+      "kunde": "Bølgen Bank",
+      "rolle": "Backendutvikler",
+      "til": "2026-11-13"
+    },
+    "ledig_fra": "2026-11-16",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k025",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k026",
+    "nåværende_oppdrag": {
+      "kunde": "Trolltind Retail",
+      "rolle": "Tech lead",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k027",
+    "nåværende_oppdrag": {
+      "kunde": "Midtnorsk Forsikring",
+      "rolle": "UX-designer",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k028",
+    "nåværende_oppdrag": {
+      "kunde": "Midtnorsk Forsikring",
+      "rolle": "Backend",
+      "til": "2026-11-27"
+    },
+    "ledig_fra": "2026-11-30",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k029",
+    "nåværende_oppdrag": {
+      "kunde": "Myrull Medtech",
+      "rolle": "Plattformingeniør",
+      "til": "2027-01-29"
+    },
+    "ledig_fra": "2027-02-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k030",
+    "nåværende_oppdrag": {
+      "kunde": "Sjøbris Energi",
+      "rolle": "ML-ingeniør",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k031",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Fullstackutvikler",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k032",
+    "nåværende_oppdrag": {
+      "kunde": "Polarstjerna Telekom",
+      "rolle": "Skyarkitekt",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k033",
+    "nåværende_oppdrag": {
+      "kunde": "Sjøbris Energi",
+      "rolle": "Skyarkitekt",
+      "til": "2026-10-30"
+    },
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k034",
+    "nåværende_oppdrag": {
+      "kunde": "Lysthus Kommune",
+      "rolle": "Dataingeniør",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k035",
+    "nåværende_oppdrag": {
+      "kunde": "Havørn Shipping",
+      "rolle": "Virksomhetsarkitekt",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k036",
+    "nåværende_oppdrag": {
+      "kunde": "Trøndelag Helsedata",
+      "rolle": "Fullstackutvikler",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k037",
+    "nåværende_oppdrag": {
+      "kunde": "Midtnorsk Forsikring",
+      "rolle": "Frontendutvikler",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k038",
+    "nåværende_oppdrag": {
+      "kunde": "Trolltind Retail",
+      "rolle": "SRE",
+      "til": "2027-01-15"
+    },
+    "ledig_fra": "2027-01-18",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k039",
+    "nåværende_oppdrag": {
+      "kunde": "Skogly Skole-IT",
+      "rolle": "Produkteier",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k040",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Sikkerhetsarkitekt",
+      "til": "2026-11-13"
+    },
+    "ledig_fra": "2026-11-16",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k041",
+    "nåværende_oppdrag": {
+      "kunde": "Trøndelag Helsedata",
+      "rolle": "Backend/plattform",
+      "til": "2027-03-31"
+    },
+    "ledig_fra": "2026-11-01",
+    "ledig_prosent": 60,
+    "kommentar": "Fortsetter 40 % hos nåværende kunde ut mars."
+  },
+  {
+    "id": "k042",
+    "nåværende_oppdrag": {
+      "kunde": "Skogly Skole-IT",
+      "rolle": "Dataingeniør",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k043",
+    "nåværende_oppdrag": {
+      "kunde": "Fjordlaks Havbruk",
+      "rolle": "Sikkerhetsrådgiver",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k044",
+    "nåværende_oppdrag": {
+      "kunde": "Nordlys Kraft",
+      "rolle": "Plattformingeniør",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k045",
+    "nåværende_oppdrag": {
+      "kunde": "Sjøbris Energi",
+      "rolle": "Sikkerhetsarkitekt",
+      "til": "2027-02-12"
+    },
+    "ledig_fra": "2027-02-15",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k046",
+    "nåværende_oppdrag": {
+      "kunde": "Lysthus Kommune",
+      "rolle": "Interaksjonsdesigner",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k047",
+    "nåværende_oppdrag": {
+      "kunde": "Lysthus Kommune",
+      "rolle": "Tjenestedesigner",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k048",
+    "nåværende_oppdrag": {
+      "kunde": "Granitt Eiendom",
+      "rolle": "SRE",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k049",
+    "nåværende_oppdrag": {
+      "kunde": "Sjøbris Energi",
+      "rolle": "Backendutvikler",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k050",
+    "nåværende_oppdrag": {
+      "kunde": "Fjordlaks Havbruk",
+      "rolle": "Tjenestedesigner",
+      "til": "2027-01-29"
+    },
+    "ledig_fra": "2027-02-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k051",
+    "nåværende_oppdrag": {
+      "kunde": "Kveldsol Media",
+      "rolle": "ML-ingeniør",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k052",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k053",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "ML-ingeniør",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k054",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Data scientist",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k055",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k056",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k057",
+    "nåværende_oppdrag": {
+      "kunde": "Bølgen Bank",
+      "rolle": "Dataingeniør",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k058",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Backendutvikler",
+      "til": "2026-10-23"
+    },
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k059",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-10-26",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k060",
+    "nåværende_oppdrag": {
+      "kunde": "Kveldsol Media",
+      "rolle": "Backendutvikler",
+      "til": "2026-11-13"
+    },
+    "ledig_fra": "2026-11-16",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k061",
+    "nåværende_oppdrag": {
+      "kunde": "Myrull Medtech",
+      "rolle": "Sikkerhetsrådgiver",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k062",
+    "nåværende_oppdrag": {
+      "kunde": "Trolltind Retail",
+      "rolle": "Backendutvikler",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k063",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "ML-ingeniør",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k064",
+    "nåværende_oppdrag": null,
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k065",
+    "nåværende_oppdrag": {
+      "kunde": "Lysthus Kommune",
+      "rolle": "Backendutvikler",
+      "til": "2027-02-12"
+    },
+    "ledig_fra": "2027-02-15",
+    "ledig_prosent": 80
+  },
+  {
+    "id": "k066",
+    "nåværende_oppdrag": {
+      "kunde": "Kveldsol Media",
+      "rolle": "Backendutvikler",
+      "til": "2027-01-01"
+    },
+    "ledig_fra": "2027-01-04",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k067",
+    "nåværende_oppdrag": {
+      "kunde": "Polarstjerna Telekom",
+      "rolle": "DevOps-ingeniør",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k068",
+    "nåværende_oppdrag": {
+      "kunde": "Kveldsol Media",
+      "rolle": "SRE",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k069",
+    "nåværende_oppdrag": {
+      "kunde": "Vestveien Logistikk",
+      "rolle": "Frontendutvikler",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k070",
+    "nåværende_oppdrag": {
+      "kunde": "Statsbanken (intern rådgivning)",
+      "rolle": "Fagleder",
+      "til": null
+    },
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 20,
+    "kommentar": "Kun tilgjengelig for kvalitetssikring og arkitekturreview, ikke fullt oppdrag."
+  },
+  {
+    "id": "k071",
+    "nåværende_oppdrag": {
+      "kunde": "Kveldsol Media",
+      "rolle": "Backendutvikler",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k072",
+    "nåværende_oppdrag": {
+      "kunde": "Lysthus Kommune",
+      "rolle": "UX-designer",
+      "til": "2026-11-28"
+    },
+    "ledig_fra": "2026-12-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k073",
+    "nåværende_oppdrag": {
+      "kunde": "Bølgen Bank",
+      "rolle": "DevOps-ingeniør",
+      "til": "2026-11-13"
+    },
+    "ledig_fra": "2026-11-16",
+    "ledig_prosent": 50
+  },
+  {
+    "id": "k074",
+    "nåværende_oppdrag": {
+      "kunde": "Polarstjerna Telekom",
+      "rolle": "Data scientist",
+      "til": "2026-10-30"
+    },
+    "ledig_fra": "2026-11-02",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k075",
+    "nåværende_oppdrag": {
+      "kunde": "Kveldsol Media",
+      "rolle": "Produkteier",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k076",
+    "nåværende_oppdrag": {
+      "kunde": "Myrull Medtech",
+      "rolle": "Backendutvikler",
+      "til": "2027-01-29"
+    },
+    "ledig_fra": "2027-02-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k077",
+    "nåværende_oppdrag": {
+      "kunde": "Myrull Medtech",
+      "rolle": "UX-designer",
+      "til": "2027-02-12"
+    },
+    "ledig_fra": "2027-02-15",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k078",
+    "nåværende_oppdrag": {
+      "kunde": "Myrull Medtech",
+      "rolle": "Produkteier",
+      "til": "2027-02-26"
+    },
+    "ledig_fra": "2027-03-01",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k079",
+    "nåværende_oppdrag": {
+      "kunde": "Myrull Medtech",
+      "rolle": "Frontendutvikler",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  },
+  {
+    "id": "k080",
+    "nåværende_oppdrag": {
+      "kunde": "Skogly Skole-IT",
+      "rolle": "Skyarkitekt",
+      "til": "2026-12-11"
+    },
+    "ledig_fra": "2026-12-14",
+    "ledig_prosent": 100
+  }
+]

@@ -1,0 +1,3142 @@
+[
+  {
+    "id": "k001",
+    "navn": "Chen Spøkhus",
+    "grad": "B",
+    "rolle": "UX-designer",
+    "avdeling": "Design",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "IAAP CPACC"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "HTML/CSS",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Designsystemer",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Figma",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k002",
+    "navn": "Ida Gufseth",
+    "grad": "C",
+    "rolle": "ML-ingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [
+      "SnowPro Core",
+      "Microsoft Certified: Azure Data Engineer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Databricks",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "dbt",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "scikit-learn",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k003",
+    "navn": "Emil Spøkhus",
+    "grad": "D",
+    "rolle": "Smidig coach",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "TOGAF 9 Certified",
+      "SAFe Agilist"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Prosjektledelse",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Endringsledelse",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Scrum",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Jira",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k004",
+    "navn": "Marte Heksehyl",
+    "grad": "D",
+    "rolle": "ML-ingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "tysk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Python",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Kafka",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "SQL",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Airflow",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "PyTorch",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "scikit-learn",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k005",
+    "navn": "Martin Gravøl",
+    "grad": "C",
+    "rolle": "Smidig coach",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Endringsledelse",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Gevinstrealisering",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Jira",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Kanban",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k006",
+    "navn": "Agnieszka Nattmoen",
+    "grad": "A",
+    "rolle": "Fullstackutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "spansk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Go",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Vue",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k007",
+    "navn": "Ingrid Gravstø",
+    "grad": "D",
+    "rolle": "Skyarkitekt",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "HashiCorp Certified: Terraform Associate",
+      "Microsoft Certified: Azure Solutions Architect Expert"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "GitHub Actions",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k008",
+    "navn": "Priya Draugsvold",
+    "grad": "A",
+    "rolle": "Prosjektleder",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Endringsledelse",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Kanban",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Scrum",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k009",
+    "navn": "Fredrik Spøkelsrud",
+    "grad": "A",
+    "rolle": "Prosjektleder",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "TOGAF 9 Certified"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Prosjektledelse",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Scrum",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Endringsledelse",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Kanban",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Jira",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k010",
+    "navn": "Kari Hekseberg",
+    "grad": "B",
+    "rolle": "Fullstackutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Java",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 4
+      },
+      {
+        "ferdighet": ".NET",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k011",
+    "navn": "Arjun Kostebakken",
+    "grad": "D",
+    "rolle": "Fullstackutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Vue",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k012",
+    "navn": "Aisha Vampyrvik",
+    "grad": "C",
+    "rolle": "DevOps-ingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "AWS",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Helm",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GitHub Actions",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Pulumi",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k013",
+    "navn": "Chen Gjengangerud",
+    "grad": "B",
+    "rolle": "Interaksjonsdesigner",
+    "avdeling": "Design",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Figma",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Universell utforming",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k014",
+    "navn": "Kari Kostebakken",
+    "grad": "A",
+    "rolle": "ML-ingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "scikit-learn",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Databricks",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Spark",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k015",
+    "navn": "Jonas Kistevold",
+    "grad": "D",
+    "rolle": "Skyarkitekt",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "HashiCorp Certified: Terraform Associate",
+      "Microsoft Certified: Azure Solutions Architect Expert"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Azure Bicep",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "PowerShell",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k016",
+    "navn": "Zainab Kråkeslott",
+    "grad": "E",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "Oracle Certified Professional: Java SE"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 5
+      },
+      {
+        "ferdighet": ".NET",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k017",
+    "navn": "Aleksander Forbannelsen",
+    "grad": "C",
+    "rolle": "Virksomhetsarkitekt",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [
+      "TOGAF 9 Certified",
+      "PRINCE2 Practitioner"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Scrum",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Gevinstrealisering",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Prosjektledelse",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Endringsledelse",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Jira",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k018",
+    "navn": "Yasmin Gjengangerud",
+    "grad": "B",
+    "rolle": "DevOps-ingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Ansible",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Grafana",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Terraform",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GCP",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "GitHub Actions",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k019",
+    "navn": "Emil Spøkelsrud",
+    "grad": "B",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Stavanger",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Angular",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Go",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k020",
+    "navn": "Zainab Myrlys",
+    "grad": "A",
+    "rolle": "Tech lead",
+    "avdeling": "Utvikling",
+    "lokasjon": "Stavanger",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Spring Boot",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k021",
+    "navn": "Martin Trollkjerr",
+    "grad": "B",
+    "rolle": "Interaksjonsdesigner",
+    "avdeling": "Design",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "IAAP CPACC"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Designsystemer",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Prototyping",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Universell utforming",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "HTML/CSS",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Figma",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k022",
+    "navn": "Nora Nattmoen",
+    "grad": "D",
+    "rolle": "Sikkerhetsarkitekt",
+    "avdeling": "Sikkerhet",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "svensk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Azure",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Trusselmodellering",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Microsoft Sentinel",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "ISO 27001",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k023",
+    "navn": "Tobias Likvaak",
+    "grad": "C",
+    "rolle": "DevOps-ingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Administrator Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Bash",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Go",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k024",
+    "navn": "Emma Myrlys",
+    "grad": "B",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Go",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Vue",
+        "nivå": 3
+      },
+      {
+        "ferdighet": ".NET",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Spring Boot",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k025",
+    "navn": "Kristian Tåkeli",
+    "grad": "B",
+    "rolle": "Plattformingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Bash",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "AWS",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k026",
+    "navn": "Zainab Råtnes",
+    "grad": "B",
+    "rolle": "Tech lead",
+    "avdeling": "Utvikling",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Angular",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k027",
+    "navn": "Daniel Heksehyl",
+    "grad": "D",
+    "rolle": "UX-designer",
+    "avdeling": "Design",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "spansk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "HTML/CSS",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Designsystemer",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Prototyping",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Universell utforming",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 5
+      }
+    ]
+  },
+  {
+    "id": "k028",
+    "navn": "Elin Skjelettstrand",
+    "grad": "C",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Java",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Terraform",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k029",
+    "navn": "Vegard Dødningli",
+    "grad": "E",
+    "rolle": "Plattformingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "AWS Certified Solutions Architect – Associate",
+      "Microsoft Certified: Azure Fundamentals"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Grafana",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Terraform",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Prometheus",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Bash",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Pulumi",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Helm",
+        "nivå": 5
+      }
+    ]
+  },
+  {
+    "id": "k030",
+    "navn": "Ewa Tåkeli",
+    "grad": "D",
+    "rolle": "ML-ingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Data Engineer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "svensk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Spark",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Power BI",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Airflow",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k031",
+    "navn": "Mathias Forbannelsen",
+    "grad": "D",
+    "rolle": "Fullstackutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "React",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Angular",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Vue",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k032",
+    "navn": "Ida Heksehyl",
+    "grad": "A",
+    "rolle": "Skyarkitekt",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "AWS Certified Solutions Architect – Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Helm",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "GitHub Actions",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Terraform",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "GCP",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k033",
+    "navn": "Magnus Heksum",
+    "grad": "D",
+    "rolle": "Skyarkitekt",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Stavanger",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Solutions Architect Expert",
+      "Microsoft Certified: DevOps Engineer Expert"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Azure",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Azure Bicep",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "ARM-maler",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "PowerShell",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k034",
+    "navn": "Hedda Benknokkel",
+    "grad": "E",
+    "rolle": "Dataingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Spark",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "PyTorch",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "scikit-learn",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Azure Data Factory",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 5
+      }
+    ]
+  },
+  {
+    "id": "k035",
+    "navn": "Raj Nattmoen",
+    "grad": "A",
+    "rolle": "Virksomhetsarkitekt",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Kanban",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Scrum",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Gevinstrealisering",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Endringsledelse",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Jira",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Prosjektledelse",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k036",
+    "navn": "Ragnhild Irrbloss",
+    "grad": "B",
+    "rolle": "Fullstackutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Java",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Node.js",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Vue",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k037",
+    "navn": "Mohammed Nattsvermer",
+    "grad": "B",
+    "rolle": "Frontendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "Oracle Certified Professional: Java SE",
+      "Microsoft Certified: Azure Developer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Vue",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Go",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Spring Boot",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k038",
+    "navn": "Nora Kistemaker",
+    "grad": "C",
+    "rolle": "SRE",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "GitHub Actions",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Helm",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Pulumi",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Prometheus",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Bash",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k039",
+    "navn": "Nikolai Trollkjerr",
+    "grad": "D",
+    "rolle": "Produkteier",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Jira",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Scrum",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Kanban",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Gevinstrealisering",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k040",
+    "navn": "Julie Heksehyl",
+    "grad": "B",
+    "rolle": "Sikkerhetsarkitekt",
+    "avdeling": "Sikkerhet",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Zero Trust",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "OWASP",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Trusselmodellering",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k041",
+    "navn": "Amira Månestein",
+    "grad": "C",
+    "rolle": "Plattformutvikler",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Developer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "arabisk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Azure",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Terraform",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Helm",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k042",
+    "navn": "Linnea Benknokkel",
+    "grad": "A",
+    "rolle": "Dataingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "SnowPro Core",
+      "Microsoft Certified: Azure Data Engineer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "hindi"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Kafka",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Airflow",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "SQL",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "scikit-learn",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k043",
+    "navn": "Eirik Lyktedal",
+    "grad": "C",
+    "rolle": "Sikkerhetsrådgiver",
+    "avdeling": "Sikkerhet",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "Microsoft Certified: Security Operations Analyst"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "OWASP",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Trusselmodellering",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "ISO 27001",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Microsoft Sentinel",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Entra ID",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k044",
+    "navn": "Ragnhild Likbleik",
+    "grad": "B",
+    "rolle": "Plattformingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "AWS Certified Solutions Architect – Associate",
+      "Certified Kubernetes Administrator (CKA)"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Linux",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "AWS",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GCP",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k045",
+    "navn": "Emil Kistemaker",
+    "grad": "C",
+    "rolle": "Sikkerhetsarkitekt",
+    "avdeling": "Sikkerhet",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Penetrasjonstesting",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "ISO 27001",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "OWASP",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Entra ID",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k046",
+    "navn": "Silje Gjengangerud",
+    "grad": "B",
+    "rolle": "Interaksjonsdesigner",
+    "avdeling": "Design",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Figma",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "HTML/CSS",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Designsystemer",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Prototyping",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Universell utforming",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k047",
+    "navn": "Ali Gjengangerud",
+    "grad": "E",
+    "rolle": "Tjenestedesigner",
+    "avdeling": "Design",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [
+      "IAAP CPACC"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Figma",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Universell utforming",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Designsystemer",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "HTML/CSS",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k048",
+    "navn": "Agnieszka Skyggebakk",
+    "grad": "D",
+    "rolle": "SRE",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "Certified Kubernetes Administrator (CKA)"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Docker",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Pulumi",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Helm",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k049",
+    "navn": "Fredrik Kostebakken",
+    "grad": "B",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Next.js",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Node.js",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k050",
+    "navn": "Yasmin Irrbloss",
+    "grad": "C",
+    "rolle": "Tjenestedesigner",
+    "avdeling": "Design",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Figma",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Designsystemer",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "HTML/CSS",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Prototyping",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k051",
+    "navn": "Ola Benknokkel",
+    "grad": "C",
+    "rolle": "ML-ingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Power BI",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "SQL",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Azure Data Factory",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Databricks",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "dbt",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k052",
+    "navn": "Sofie Spøkelund",
+    "grad": "B",
+    "rolle": "DevOps-ingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "HashiCorp Certified: Terraform Associate",
+      "Microsoft Certified: Azure Fundamentals"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "GitHub Actions",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k053",
+    "navn": "Kenneth Gravhaug",
+    "grad": "D",
+    "rolle": "ML-ingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "fransk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Databricks",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Spark",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k054",
+    "navn": "Julie Dødningli",
+    "grad": "B",
+    "rolle": "Data scientist",
+    "avdeling": "Data og AI",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "SnowPro Core"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Power BI",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Spark",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Kafka",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "SQL",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k055",
+    "navn": "Kristian Sjelevik",
+    "grad": "A",
+    "rolle": "Sikkerhetsrådgiver",
+    "avdeling": "Sikkerhet",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Azure",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Entra ID",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Microsoft Sentinel",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "ISO 27001",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Penetrasjonstesting",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "OWASP",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k056",
+    "navn": "Fatima Gravlykt",
+    "grad": "E",
+    "rolle": "SRE",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "Google Cloud Professional Cloud Architect",
+      "Microsoft Certified: Azure Fundamentals"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Linux",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Terraform",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Bash",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "GitHub Actions",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Grafana",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k057",
+    "navn": "Johan Vampyrvik",
+    "grad": "A",
+    "rolle": "Dataingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "tysk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Kafka",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "dbt",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Azure Data Factory",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Power BI",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k058",
+    "navn": "Maja Mumiedal",
+    "grad": "B",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "tysk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Vue",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Spring Boot",
+        "nivå": 4
+      },
+      {
+        "ferdighet": ".NET",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Node.js",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k059",
+    "navn": "Johan Edderkopp",
+    "grad": "C",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Developer Associate",
+      "Oracle Certified Professional: Java SE"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Java",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Angular",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k060",
+    "navn": "Selma Hekseberg",
+    "grad": "C",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [
+      "Oracle Certified Professional: Java SE",
+      "Microsoft Certified: Azure Developer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Spring Boot",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Java",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k061",
+    "navn": "Tomasz Kostebakken",
+    "grad": "B",
+    "rolle": "Sikkerhetsrådgiver",
+    "avdeling": "Sikkerhet",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "OWASP",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Microsoft Sentinel",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Zero Trust",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Trusselmodellering",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k062",
+    "navn": "Selma Gjengangerud",
+    "grad": "B",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "C#",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Spring Boot",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Vue",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k063",
+    "navn": "Raj Nattsvermer",
+    "grad": "E",
+    "rolle": "ML-ingeniør",
+    "avdeling": "Data og AI",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "SnowPro Core",
+      "Microsoft Certified: Azure Data Engineer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Spark",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "PyTorch",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Databricks",
+        "nivå": 5
+      }
+    ]
+  },
+  {
+    "id": "k064",
+    "navn": "Lucas Mortifer",
+    "grad": "C",
+    "rolle": "Plattformingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "AWS Certified Solutions Architect – Professional",
+      "HashiCorp Certified: Terraform Associate"
+    ],
+    "språk": [
+      "engelsk",
+      "fransk",
+      "norsk (B1)"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "AWS",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Go",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k065",
+    "navn": "Mathias Råtnes",
+    "grad": "A",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [
+      "Oracle Certified Professional: Java SE"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Go",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Angular",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k066",
+    "navn": "Leah Gufseth",
+    "grad": "B",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Stavanger",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Developer Associate",
+      "Oracle Certified Professional: Java SE"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Go",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "C#",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Spring Boot",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 1
+      }
+    ]
+  },
+  {
+    "id": "k067",
+    "navn": "Kenneth Trollkjerr",
+    "grad": "E",
+    "rolle": "DevOps-ingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "Google Cloud Professional Cloud Architect"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Azure",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Pulumi",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Terraform",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "AWS",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Grafana",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k068",
+    "navn": "Anh Månesigd",
+    "grad": "B",
+    "rolle": "SRE",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Fundamentals"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Bash",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Azure DevOps",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "AWS",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k069",
+    "navn": "Raj Spindelvev",
+    "grad": "B",
+    "rolle": "Frontendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "hindi"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "GraphQL",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k070",
+    "navn": "Henrik Dødsdahl",
+    "grad": "E",
+    "rolle": "Fagleder sky",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Solutions Architect Expert"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "svensk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Terraform",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "AWS",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Arkitektur",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k071",
+    "navn": "Johan Forbannelsen",
+    "grad": "E",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "Microsoft Certified: Azure Developer Associate"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "React",
+        "nivå": 4
+      },
+      {
+        "ferdighet": ".NET",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Java",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Node.js",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k072",
+    "navn": "Mari Edderkopp",
+    "grad": "D",
+    "rolle": "UX-designer",
+    "avdeling": "Design",
+    "lokasjon": "Trondheim",
+    "sertifiseringer": [
+      "IAAP CPACC"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Prototyping",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Designsystemer",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Figma",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k073",
+    "navn": "Omar Edderkopp",
+    "grad": "B",
+    "rolle": "DevOps-ingeniør",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "mandarin"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Ansible",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Pulumi",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "AWS",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Helm",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "GCP",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Azure",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k074",
+    "navn": "Ewa Gravhaug",
+    "grad": "D",
+    "rolle": "Data scientist",
+    "avdeling": "Data og AI",
+    "lokasjon": "Stavanger",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Databricks",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "scikit-learn",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Python",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Airflow",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Snowflake",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "LLM/RAG",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Power BI",
+        "nivå": 5
+      }
+    ]
+  },
+  {
+    "id": "k075",
+    "navn": "Mathias Edderkopp",
+    "grad": "D",
+    "rolle": "Produkteier",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "TOGAF 9 Certified"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Scrum",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Prosjektledelse",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Jira",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k076",
+    "navn": "Maja Gjenferdsmo",
+    "grad": "C",
+    "rolle": "Backendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "C#",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Next.js",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Node.js",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Kotlin",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 2
+      }
+    ]
+  },
+  {
+    "id": "k077",
+    "navn": "Viktor Hodeløs",
+    "grad": "C",
+    "rolle": "UX-designer",
+    "avdeling": "Design",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "IAAP CPACC"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Brukertesting",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Universell utforming",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Prototyping",
+        "nivå": 3
+      },
+      {
+        "ferdighet": "HTML/CSS",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Tjenestedesign",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k078",
+    "navn": "Sara Vampyrvik",
+    "grad": "D",
+    "rolle": "Produkteier",
+    "avdeling": "Rådgivning",
+    "lokasjon": "Oslo",
+    "sertifiseringer": [
+      "PRINCE2 Practitioner"
+    ],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Gevinstrealisering",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Jira",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Kanban",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "TOGAF",
+        "nivå": 4
+      }
+    ]
+  },
+  {
+    "id": "k079",
+    "navn": "Sander Myrlys",
+    "grad": "D",
+    "rolle": "Frontendutvikler",
+    "avdeling": "Utvikling",
+    "lokasjon": "Bergen",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "C#",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "React",
+        "nivå": 2
+      },
+      {
+        "ferdighet": "Docker",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "PostgreSQL",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Vue",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "TypeScript",
+        "nivå": 3
+      }
+    ]
+  },
+  {
+    "id": "k080",
+    "navn": "Fatima Skyggebakk",
+    "grad": "D",
+    "rolle": "Skyarkitekt",
+    "avdeling": "Skyplattform",
+    "lokasjon": "Stavanger",
+    "sertifiseringer": [],
+    "språk": [
+      "norsk",
+      "engelsk",
+      "hindi"
+    ],
+    "kompetanse": [
+      {
+        "ferdighet": "Kubernetes",
+        "nivå": 5
+      },
+      {
+        "ferdighet": "Bash",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Linux",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "GCP",
+        "nivå": 4
+      },
+      {
+        "ferdighet": "Prometheus",
+        "nivå": 1
+      },
+      {
+        "ferdighet": "Git",
+        "nivå": 2
+      }
+    ]
+  }
+]
