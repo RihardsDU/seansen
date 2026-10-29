@@ -28,7 +28,28 @@
     <path d="M56 178h88v18c0 7-5 12-12 12H68c-7 0-12-5-12-12z" fill="#050308"/>
     <g fill="#efe8d8"><rect x="63" y="178" width="9" height="13" rx="2"/><rect x="76" y="178" width="9" height="19" rx="2"/><rect x="89" y="178" width="9" height="15" rx="2"/><rect x="102" y="178" width="9" height="20" rx="2"/><rect x="115" y="178" width="9" height="14" rx="2"/><rect x="128" y="178" width="9" height="18" rx="2"/></g>
   </svg>
+  <svg class="skjelett" viewBox="-50 -50 320 380">
+    <g fill="#efe8d8" stroke="#2a2420" stroke-width="2" stroke-linejoin="round">
+      <path d="M110 10c-36 0-58 26-58 60 0 22 10 38 24 48v24c0 8 6 14 14 14h40c8 0 14-6 14-14v-24c14-10 24-26 24-48 0-34-22-60-58-60z"/>
+      <ellipse cx="88" cy="74" rx="15" ry="18" fill="#050308" stroke="none"/><ellipse cx="132" cy="74" rx="15" ry="18" fill="#050308" stroke="none"/>
+      <circle class="pupill" cx="88" cy="77" r="5" fill="#ff2a2a" stroke="none" filter="url(#glød)"/><circle class="pupill" cx="132" cy="77" r="5" fill="#ff2a2a" stroke="none" filter="url(#glød)"/>
+      <path d="M110 90l-8 18h16z" fill="#050308" stroke="none"/>
+      <path d="M86 126h48v12c0 5-3 8-8 8H94c-5 0-8-3-8-8z" fill="#050308" stroke="none"/>
+      <g fill="#efe8d8" stroke="none"><rect x="90" y="126" width="6" height="10" rx="1.5"/><rect x="99" y="126" width="6" height="13" rx="1.5"/><rect x="108" y="126" width="6" height="11" rx="1.5"/><rect x="117" y="126" width="6" height="14" rx="1.5"/><rect x="126" y="126" width="6" height="10" rx="1.5"/></g>
+      <rect x="104" y="154" width="12" height="150" rx="4"/>
+      <path d="M58 172h104" stroke="#efe8d8" stroke-width="9" stroke-linecap="round"/>
+      <path d="M66 192q44 28 88 0M70 214q40 26 80 0M76 236q34 22 68 0M82 258q28 18 56 0" fill="none" stroke="#efe8d8" stroke-width="8" stroke-linecap="round"/>
+      <path d="M66 192q44 28 88 0M70 214q40 26 80 0M76 236q34 22 68 0M82 258q28 18 56 0" fill="none" stroke="#2a2420" stroke-width="1.5" stroke-linecap="round"/>
+      <g class="arm" stroke="#efe8d8" stroke-linecap="round" fill="none">
+        <path d="M60 174L26 128M26 128L10 70" stroke-width="9"/>
+        <path d="M160 174L194 128M194 128L210 70" stroke-width="9"/>
+      </g>
+      <use href="#haand" x="-18" y="-15" width="56" height="86" transform="rotate(-34 10 70)"/>
+      <use href="#haand" x="182" y="-15" width="56" height="86" transform="rotate(34 210 70)"/>
+    </g>
+  </svg>
 </div>
+<div id="skrekk-lag" aria-hidden="true"></div>
 <div class="brytere" role="group" aria-label="Lyd og skremsler">
   <button type="button" id="lydbryter" aria-pressed="true" title="Slå lyden av eller på"><span class="ikon">🔊</span><span class="tekst">Lyd</span></button>
   <button type="button" id="skrekkbryter" aria-pressed="true" title="Slå skremslene av eller på"><span class="ikon">💀</span><span class="tekst">Skremsler</span></button>
@@ -37,6 +58,27 @@
 <svg class="flaggermus" style="--d:41s;--t:28%;--s:.6;animation-delay:-17s" viewBox="0 0 64 28" aria-hidden="true"><use href="#bat"/></svg>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="bat" viewBox="0 0 64 28"><path fill="currentColor" d="M32 8c2 0 3 2 3.5 4 3-4 8-6 14-5-3 2-4 4-3.5 6 3 0 6 1 8.5 3-4-1-7 0-9 2-1-2-3-3-5-3-1 2-3 4-4.5 8-1-3-2-5-3-6-1 1-2 3-3 6-1.5-4-3.5-6-4.5-8-2 0-4 1-5 3-2-2-5-3-9-2 2.5-2 5.5-3 8.5-3 .5-2-.5-4-3.5-6 6-1 11 1 14 5 .5-2 1.5-4 3.5-4z"/></symbol>
+  <!-- Skjeletthånd: underarm, håndflate og fem fingre i tre ledd. Fingrene krøller seg via .finger i CSS. -->
+  <symbol id="haand" viewBox="0 -12 120 182" overflow="visible">
+    <g fill="#e6dfd0" stroke="#3a3028" stroke-width="2" stroke-linejoin="round">
+      <rect x="46" y="118" width="28" height="64" rx="10"/>
+      <path d="M32 78c0-10 8-18 18-18h22c10 0 18 8 18 18v30c0 14-10 22-29 22s-29-8-29-22z"/>
+      <g transform="rotate(-18 40 64)"><g class="finger"><rect x="34" y="42" width="12" height="24" rx="5"/><rect x="34" y="22" width="12" height="20" rx="5"/><rect x="35" y="6" width="10" height="16" rx="5"/></g></g>
+      <g transform="rotate(-6 52 60)"><g class="finger"><rect x="46" y="36" width="12" height="26" rx="5"/><rect x="46" y="14" width="12" height="22" rx="5"/><rect x="47" y="-4" width="10" height="18" rx="5"/></g></g>
+      <g transform="rotate(5 64 60)"><g class="finger"><rect x="58" y="34" width="12" height="28" rx="5"/><rect x="58" y="10" width="12" height="24" rx="5"/><rect x="59" y="-8" width="10" height="18" rx="5"/></g></g>
+      <g transform="rotate(16 76 62)"><g class="finger"><rect x="70" y="40" width="12" height="24" rx="5"/><rect x="70" y="20" width="12" height="20" rx="5"/><rect x="71" y="4" width="10" height="16" rx="5"/></g></g>
+      <g transform="rotate(52 36 96)"><g class="finger"><rect x="30" y="76" width="12" height="22" rx="5"/><rect x="30" y="58" width="12" height="18" rx="5"/></g></g>
+    </g>
+  </symbol>
+  <symbol id="edderkopp" viewBox="-32 -32 64 64" overflow="visible">
+    <path d="M-6-6l-12-10-8 2M-7-2l-16-4-6 6M-7 3l-16 4-4 8M-5 7l-12 12-1 8M6-6l12-10 8 2M7-2l16-4 6 6M7 3l16 4 4 8M5 7l12 12 1 8" fill="none" stroke="#1b1620" stroke-width="2.4" stroke-linecap="round"/>
+    <ellipse cx="0" cy="4" rx="9" ry="12" fill="#1b1620"/><circle cx="0" cy="-8" r="6" fill="#241c2a"/>
+    <circle cx="-2.4" cy="-9" r="1.4" fill="#ff2a2a"/><circle cx="2.4" cy="-9" r="1.4" fill="#ff2a2a"/>
+  </symbol>
+  <symbol id="spoekelse" viewBox="0 0 80 100">
+    <path d="M40 4C20 4 8 20 8 42v50l8-7 8 7 8-7 8 7 8-7 8 7 8-7 8 7V42C72 20 60 4 40 4z" fill="#dfe6f2"/>
+    <ellipse cx="29" cy="40" rx="5" ry="8" fill="#0a0810"/><ellipse cx="51" cy="40" rx="5" ry="8" fill="#0a0810"/><ellipse cx="40" cy="60" rx="6" ry="9" fill="#0a0810"/>
+  </symbol>
 </svg>
 
 <header class="topp">

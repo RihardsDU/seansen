@@ -301,6 +301,23 @@ details.cv summary:hover { color: var(--glør2); }
   80% { transform: scale(1.06); opacity: 1; }
   100% { transform: scale(1.5); opacity: 0; }
 }
+/* Skjelettet som alternativ figur i hoppskremselet */
+.skrekk[data-figur='skjelett'] .ansikt, .skrekk:not([data-figur='skjelett']) .skjelett { display: none; }
+.skrekk .skjelett {
+  height: min(96vh, 900px); width: auto; overflow: visible; filter: drop-shadow(0 0 40px rgba(255, 40, 40, .7)) contrast(1.2);
+  animation: lunge 1.15s cubic-bezier(.1, .9, .2, 1) both; transform-origin: 50% 100%;
+}
+.skrekk .skjelett .arm { animation: famle .18s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes famle { to { transform: rotate(3deg) translateY(-4px); } }
+@keyframes lunge {
+  0% { transform: translateY(110%) scale(.6) rotate(-6deg); opacity: 0; }
+  9% { transform: translateY(-2%) scale(1.2) rotate(3deg); opacity: 1; }
+  18% { transform: translateY(5%) scale(1.08) rotate(-3deg); }
+  30% { transform: translateY(0) scale(1.14) rotate(2deg) translateX(-8px); }
+  42% { transform: translateY(3%) scale(1.1) translateX(8px); }
+  80% { transform: translateY(0) scale(1.06); opacity: 1; }
+  100% { transform: translateY(-10%) scale(1.5); opacity: 0; }
+}
 body.rist main, body.rist .topp { animation: rist .45s linear 2; }
 @keyframes rist {
   0%, 100% { transform: translate(0); } 10% { transform: translate(-9px, 5px); } 20% { transform: translate(10px, -6px); }
@@ -318,6 +335,60 @@ body.rist main, body.rist .topp { animation: rist .45s linear 2; }
 }
 @keyframes øyne { 0% { opacity: 0; } 15% { opacity: .95; } 85% { opacity: .95; } 100% { opacity: 0; } }
 @keyframes blunk { 0%, 52%, 60%, 100% { transform: scaleY(1); } 55%, 58% { transform: scaleY(.08); } }
+
+/* Småskrekk: hånd, edderkopp og spøkelse lever i #skrekk-lag */
+#skrekk-lag { position: fixed; inset: 0; pointer-events: none; z-index: 7; overflow: hidden; }
+#skrekk-lag svg { display: block; overflow: visible; }
+
+.hånd {
+  position: absolute; bottom: 0; width: 170px; transform: translate(-50%, 102%);
+  filter: drop-shadow(0 -4px 16px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(255, 138, 43, .25));
+  animation: grip-opp 2.7s cubic-bezier(.25, 1.3, .4, 1) both;
+}
+.hånd svg { width: 100%; height: 258px; }
+.hånd .finger { transform-box: fill-box; transform-origin: 50% 100%; animation: grip 2.7s ease-in-out both; }
+@keyframes grip-opp {
+  0% { transform: translate(-50%, 102%) rotate(var(--vri, 0deg)); }
+  22% { transform: translate(-50%, 6%) rotate(calc(var(--vri, 0deg) - 4deg)); }
+  34% { transform: translate(-50%, 12%) rotate(calc(var(--vri, 0deg) + 3deg)); }
+  48% { transform: translate(-50%, 8%) rotate(var(--vri, 0deg)); }
+  74% { transform: translate(-50%, 10%) rotate(calc(var(--vri, 0deg) - 2deg)); }
+  100% { transform: translate(-50%, 104%) rotate(var(--vri, 0deg)); }
+}
+@keyframes grip {
+  0%, 24% { transform: scaleY(1); }
+  36% { transform: scaleY(.5); }
+  50% { transform: scaleY(.95); }
+  62% { transform: scaleY(.45); }
+  78% { transform: scaleY(.8); }
+  100% { transform: scaleY(.6); }
+}
+
+/* Tråden er like lang som fallet, og hele greia skyves ned ovenfra med transform. */
+.edderkopp {
+  position: absolute; top: 0; width: 2px; height: var(--fall, 40vh); margin-left: -1px;
+  background: linear-gradient(rgba(230, 230, 240, .15), rgba(230, 230, 240, .7));
+  transform: translateY(-100%); animation: fir 5.2s ease-in-out both;
+}
+.edderkopp svg { position: absolute; bottom: -30px; left: 50%; width: 66px; height: 66px; margin-left: -33px; transform-origin: 50% 0; animation: sprell .55s ease-in-out infinite alternate; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .8)); }
+@keyframes fir {
+  0% { transform: translateY(-100%); } 28% { transform: translateY(0); } 36% { transform: translateY(-12%); } 44% { transform: translateY(0); }
+  76% { transform: translateY(0); } 100% { transform: translateY(-100%); }
+}
+@keyframes sprell { from { transform: rotate(-7deg); } to { transform: rotate(7deg); } }
+
+/* Spøkelset legges i #øyne-laget (bak innholdet), ikke i #skrekk-lag. */
+.spøkelse {
+  position: absolute; left: -160px; width: 120px; opacity: 0; filter: blur(.5px) drop-shadow(0 0 24px rgba(190, 210, 255, .55));
+  animation: sveve var(--t, 10s) linear both;
+}
+.spøkelse svg { display: block; overflow: visible; }
+.spøkelse.fra-høyre { left: auto; right: -160px; animation-name: sveve-venstre; }
+.spøkelse.fra-høyre svg { transform: scaleX(-1); }
+.spøkelse svg { width: 100%; height: 150px; animation: duve 1.9s ease-in-out infinite alternate; }
+@keyframes sveve { 0% { transform: translateX(0); opacity: 0; } 12% { opacity: .5; } 88% { opacity: .5; } 100% { transform: translateX(calc(100vw + 320px)); opacity: 0; } }
+@keyframes sveve-venstre { 0% { transform: translateX(0); opacity: 0; } 12% { opacity: .5; } 88% { opacity: .5; } 100% { transform: translateX(calc(-100vw - 320px)); opacity: 0; } }
+@keyframes duve { from { translate: 0 -10px; } to { translate: 0 10px; } }
 
 /* Sjeleregisteret */
 .filtre { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 0 0 12px; }
@@ -386,5 +457,5 @@ table.reg .pst.opptatt { color: var(--blod); border-color: rgba(209, 48, 76, .5)
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
-  .flaggermus { display: none; }
+  .flaggermus, #skrekk-lag { display: none; }
 }

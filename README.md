@@ -27,7 +27,7 @@ Mørk, grøssende side med séancelogg (verktøykallene live), rangerte «gravst
 **Grøss.** Siden har lyd og skremsler, begge med bryter oppe til høyre (valget huskes i nettleseren):
 
 - Lyden er syntetisert i nettleseren med Web Audio (`web/lyd.js`), ingen lydfiler. Vind og dur i bakgrunnen, hjerteslag som øker mens agenten jobber, hvisking på tanker, klikk på verktøykall, lyn, torden og kirkeklokke når svaret kommer, ond latter når ingen er perfekt match. Nettleseren slipper lyden løs ved første trykk på siden.
-- Skremslene (`web/skrekk.js`): hodeskallen hopper fram tilfeldig etter svar (aldri det første, og minst 90 sekunder mellom hver gang), når du har sittet stille i ett minutt, eller når du skriver «bø» i feltet. Øyne åpner seg i tåka innimellom. Alt er av når systemet ber om redusert bevegelse.
+- Skremslene (`web/skrekk.js`): hoppskremselet veksler mellom hodeskallen og et skjelett som kaster seg mot skjermen. Det slår til tilfeldig etter svar (aldri det første, og minst 90 sekunder mellom hver gang), når du har sittet stille i ett minutt, eller når du skriver «bø» i feltet. I tillegg kommer småskrekk uten pause: en skjeletthånd som griper opp fra bunnen (når et verktøy feiler, når ingen er perfekt match, og iblant når du holder musa over en gravstein), en edderkopp som firer seg ned fra toppen (når Mediet hvisker et spørsmål), et spøkelse som svever forbi bak innholdet, og øyne som åpner seg i tåka. Alle figurene er inline-SVG uten bilder. Alt er av når systemet ber om redusert bevegelse.
 - Agenten svarer som «Mediet» (se `webSystem` i `src/server.js`): grøsserstil oppå nøyaktige fakta, en gravskrift per kandidat og en avsluttende spådom.
 
 ## Hva ligger her

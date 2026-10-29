@@ -124,7 +124,7 @@ function kompetanseChips(k) {
 
 function gravstein(c, i) {
   const k = c.konsulent;
-  return h('article', { class: `gravstein${i === 0 ? ' først' : ''}`, style: `--i:${i}`, onmouseenter: () => Math.random() < 0.2 && lyd.hvisk(0.6) },
+  return h('article', { class: `gravstein${i === 0 ? ' først' : ''}`, style: `--i:${i}`, onmouseenter: (e) => { if (Math.random() < 0.2) lyd.hvisk(0.6); else if (Math.random() < 0.12) skrekk.hånd(e.clientX); } },
     h('div', { class: 'rang', 'aria-label': `Plass ${i + 1}` }, romertall[i + 1] ?? i + 1),
     h('div', { class: 'hode' },
       h('div', {},
@@ -250,7 +250,7 @@ async function påkall(tekst) {
       if (e.type !== 'ferdig') våkn();
       if (e.type === 'tanke') { logg.tanke(e.tekst); lyd.hvisk(); }
       else if (e.type === 'verktoy') { logg.verktøy(e.navn, e.input); lyd.tikk(); }
-      else if (e.type === 'resultat') { logg.resultat(e.ok, e.kort); if (e.ok) lyd.plink(); else { lyd.surr(); skrekk.lyn('rød'); } }
+      else if (e.type === 'resultat') { logg.resultat(e.ok, e.kort); if (e.ok) lyd.plink(); else { lyd.surr(); skrekk.lyn('rød'); skrekk.hånd(); } }
       else if (e.type === 'svar') {
         logg.ferdig();
         lyd.stoppHjerte();
@@ -259,12 +259,17 @@ async function påkall(tekst) {
         lyd.klokke();
         agent.append(svarVisning(e.svar, idag));
         agentTekst = sammendragAvSvar(e.svar);
-        if (e.svar.ingen_perfekt_match) setTimeout(() => lyd.latter(), 1400);
+        if (e.svar.ingen_perfekt_match) {
+          setTimeout(() => lyd.latter(), 1400);
+          setTimeout(() => skrekk.hånd(innerWidth * 0.3), 1700);
+          setTimeout(() => skrekk.hånd(innerWidth * 0.7), 2100);
+        }
         setTimeout(() => skrekk.kanskjeSkrem(0.35), 2200);
       } else if (e.type === 'sporsmal') {
         logg.ferdig();
         lyd.stoppHjerte();
         lyd.hvisk(2.2);
+        skrekk.edderkopp();
         agent.append(h('div', { class: 'spørsmål' },
           h('div', { class: 'hvisk' }, 'Séancen hvisker tilbake'),
           h('p', {}, e.sporsmal),
@@ -344,6 +349,7 @@ visEksempler();
 
   skrekk.startØyne();
   skrekk.startLurer();
+  skrekk.startSmåskrekk();
 }
 
 // ---------- Faner og kapasitet ----------
@@ -566,4 +572,11 @@ async function lastRegister() {
   if (url.get('fane') === 'kapasitet') $('fane-kap').click();
   else if (url.get('fane') === 'register') $('fane-reg').click();
   else if (url.get('q')) påkall(url.get('q'));
+  // /?skrekk=alle slipper løs alle figurene med én gang, til demo og testing.
+  if (url.get('skrekk') === 'alle') {
+    skrekk.hånd(innerWidth * 0.25);
+    skrekk.edderkopp();
+    skrekk.spøkelse();
+    setTimeout(() => skrekk.skrem({ tving: true, figur: 'skjelett' }), 600);
+  }
 }
