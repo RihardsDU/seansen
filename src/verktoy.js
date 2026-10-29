@@ -8,6 +8,7 @@ const DATA = path.join(import.meta.dirname, '..', 'data');
 const lesJson = (fil) => JSON.parse(fs.readFileSync(path.join(DATA, fil), 'utf8'));
 
 const konsulenter = lesJson('konsulenter.json');
+const tilgjengelighet = lesJson('tilgjengelighet.json');
 
 export const system = `Du er bemanningsagenten i et konsulentselskap med kontorer i Oslo, Bergen, Trondheim og Stavanger.
 Du får et behov i naturlig språk og skal finne de beste kandidatene.
@@ -69,9 +70,20 @@ Merk at noen bare er delvis ledige, og at enkelte har en kommentar som begrenser
         required: ['ider'],
       },
     },
-    // TODO: les data/tilgjengelighet.json og returner radene med id i input.ider.
-    // Tenk på ukjente id-er og hva som skjer når listen er tom.
-    kjør: null,
+    kjør: async ({ ider }) => {
+      if (!Array.isArray(ider) || !ider.length) {
+        throw new Error('Mangler eller tom «ider». Oppgi id-er fra sok_kompetanse, f.eks. {"ider": ["k007", "k023"]}.');
+      }
+      const resultater = [];
+      const ukjente_ider = [];
+      for (const id of ider) {
+        const rad = tilgjengelighet.find((t) => t.id === String(id).trim().toLowerCase());
+        if (rad) resultater.push(rad);
+        else ukjente_ider.push(id);
+      }
+      if (!resultater.length) return `Fant ingen tilgjengelighet for ${ider.join(', ')}. Sjekk at id-ene kommer fra sok_kompetanse.`;
+      return ukjente_ider.length ? { resultater, ukjente_ider } : { resultater };
+    },
   },
   {
     definisjon: {
