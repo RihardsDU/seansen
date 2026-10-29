@@ -1,3 +1,9 @@
 node_modules/
 .env
 .DS_Store
+
+# Hemmeligheter: aldri commit nøkler. .env.example (uten nøkkel) er unntaket.
+.env
+.env.*
+*.env
+!.env.example

@@ -15,6 +15,15 @@ npm start -- "Vi trenger en React-utvikler i Bergen fra desember"
 
 Krever Node 20.12 eller nyere.
 
+## Webgrensesnitt (Halloween-utgaven)
+
+```bash
+npm run web                 # http://localhost:3000, krever .env med API-nøkkel
+DEMO=1 npm run web          # scriptet svar uten API-nøkkel, for å se designet
+```
+
+Mørk, grøssende side med séancelogg (verktøykallene live), rangerte «gravstein»-kort med begrunnelse og hva som mangler, teamforslag, tidslinjen «Hvem våkner når?» og en fane med hele flokkens kapasitet. Agenten stiller oppfølgingsspørsmål når behovet er for vagt. Koden ligger i `src/server.js` og `web/`.
+
 ## Hva ligger her
 
 | Fil | Hva |
