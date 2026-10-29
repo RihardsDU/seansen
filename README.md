@@ -63,4 +63,5 @@ Dataene er ren JSON og markdown. Ta med `data/`-mappa og bygg løkka i det språ
 - `sjekk_tilgjengelighet`: ledig fra-dato, prosent og nåværende oppdrag for en liste id-er. Ukjente id-er listes separat.
 - `hent_cv`: henter CV-en som markdown. Id-en valideres, og mangler CV-en, får modellen beskjed om det.
 - `finn_prosjekthistorikk`: tidligere prosjekter for én konsulent, nyeste først. Gir egen beskjed hvis historikk mangler.
+- `sok_prosjekter`: søker i alles prosjekthistorikk på bransje og/eller teknologi. Gjør at behov som `npm start -- "Vi trenger noen med erfaring fra helsesektoren"` fungerer.
 - Systemprompt: henter CV og prosjekthistorikk for toppkandidatene, og svarer uten å stille oppfølgingsspørsmål.

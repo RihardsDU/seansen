@@ -135,4 +135,45 @@ Juniorer har ofte ingen historikk ennå.`,
       return { id: renId, prosjekter: [...historikk.prosjekter].sort((a, b) => b.år - a.år) };
     },
   },
+  {
+    definisjon: {
+      name: 'sok_prosjekter',
+      description: `Søker i prosjekthistorikken til alle konsulenter etter bransje og/eller teknologi.
+Bruk den når behovet handler om erfaring fra en bransje («noen som har jobbet i helse») eller når du vil se hvem som faktisk har brukt en teknologi i et oppdrag.
+Bransjene er: Helse, Offentlig sektor, Energi, Forsikring, Bank og finans, Media, Telekom, Varehandel, Logistikk, Havbruk, Eiendom, Maritim.
+Søket matcher på deler av ordet uten å skille på store og små bokstaver. Gir du både bransje og teknologi, må prosjektet treffe begge.
+Returnerer id, navn, grad, lokasjon og de matchende prosjektene, sortert med flest treff først. Sier ingenting om hvem som er ledig.`,
+      input_schema: {
+        type: 'object',
+        properties: {
+          bransje: { type: 'string', description: 'Bransjen du leter etter, f.eks. «Helse» eller «Bank».' },
+          teknologi: { type: 'string', description: 'Teknologien du leter etter, f.eks. «Terraform».' },
+          maks_treff: { type: 'integer', minimum: 1, maximum: 50, description: 'Hvor mange konsulenter du vil ha tilbake. Standard er 15.' },
+        },
+      },
+    },
+    kjør: async ({ bransje, teknologi, maks_treff = 15 }) => {
+      const b = typeof bransje === 'string' ? bransje.trim().toLowerCase() : '';
+      const t = typeof teknologi === 'string' ? teknologi.trim().toLowerCase() : '';
+      if (!b && !t) {
+        throw new Error('Oppgi «bransje», «teknologi» eller begge, f.eks. {"bransje": "Helse"}.');
+      }
+      const passer = (p) =>
+        (!b || p.bransje.toLowerCase().includes(b)) &&
+        (!t || p.teknologier.some((x) => x.toLowerCase().includes(t)));
+      const treff = prosjekthistorikk
+        .map(({ konsulent_id, prosjekter }) => {
+          const k = konsulenter.find((k) => k.id === konsulent_id);
+          return {
+            id: konsulent_id, navn: k?.navn, grad: k?.grad, lokasjon: k?.lokasjon,
+            prosjekter: prosjekter.filter(passer).sort((x, y) => y.år - x.år),
+          };
+        })
+        .filter((k) => k.prosjekter.length)
+        .sort((x, y) => y.prosjekter.length - x.prosjekter.length || y.prosjekter[0].år - x.prosjekter[0].år);
+      const søkt = [bransje && `bransje «${bransje}»`, teknologi && `teknologi «${teknologi}»`].filter(Boolean).join(' og ');
+      if (!treff.length) return `Ingen prosjekter med ${søkt}. Prøv et annet ord.`;
+      return { antall_treff: treff.length, viser: Math.min(treff.length, maks_treff), treff: treff.slice(0, maks_treff) };
+    },
+  },
 ];
