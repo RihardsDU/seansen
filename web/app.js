@@ -369,14 +369,168 @@ async function lastKapasitet() {
 }
 $('filter').addEventListener('input', tegnKapasitet);
 
-for (const [fane, panel] of [['fane-spor', 'panel-spor'], ['fane-kap', 'panel-kap']]) {
+const FANER = [['fane-spor', 'panel-spor'], ['fane-kap', 'panel-kap'], ['fane-reg', 'panel-reg']];
+for (const [fane, panel] of FANER) {
   $(fane).addEventListener('click', () => {
-    for (const [f, p] of [['fane-spor', 'panel-spor'], ['fane-kap', 'panel-kap']]) {
+    for (const [f, p] of FANER) {
       $(f).setAttribute('aria-selected', String(f === fane));
       $(p).hidden = p !== panel;
     }
     if (panel === 'panel-kap') lastKapasitet();
+    if (panel === 'panel-reg') lastRegister();
   });
+}
+
+// ---------- Sjeleregisteret: hele flokken med filter og sortering ----------
+const GRADER = ['A', 'B', 'C', 'D', 'E'];
+const KOLONNER = [
+  { id: 'navn', tittel: 'Navn', verdi: (k) => k.navn },
+  { id: 'grad', tittel: 'Grad', verdi: (k) => k.grad },
+  { id: 'rolle', tittel: 'Rolle', verdi: (k) => k.rolle },
+  { id: 'avdeling', tittel: 'Avdeling', verdi: (k) => k.avdeling },
+  { id: 'lokasjon', tittel: 'Sted', verdi: (k) => k.lokasjon },
+  { id: 'kompetanse', tittel: 'Toppkompetanse', verdi: (k) => k.kompetanse[0]?.ferdighet ?? '', sorterbar: false },
+  { id: 'ledig_fra', tittel: 'Ledig fra', verdi: (k) => k.tilgjengelighet?.ledig_fra ?? '9999' },
+  { id: 'ledig_prosent', tittel: '%', verdi: (k) => k.tilgjengelighet?.ledig_prosent ?? -1 },
+  { id: 'prosjekter', tittel: 'Prosj.', verdi: (k) => k.prosjekter.length },
+  { id: 'cv', tittel: 'CV', verdi: (k) => (k.cv ? 1 : 0) },
+];
+
+let register = null;
+const regValg = { grad: new Set(), sted: new Set(), avd: new Set(), sorter: 'navn', retning: 1 };
+const åpneRader = new Set();
+
+function chipGruppe(boks, verdier, valgt, navn) {
+  boks.replaceChildren(...verdier.map((v) =>
+    h('button', { type: 'button', class: 'chip', 'aria-pressed': 'false', onclick: (e) => {
+      valgt.has(v) ? valgt.delete(v) : valgt.add(v);
+      e.currentTarget.setAttribute('aria-pressed', String(valgt.has(v)));
+      tegnRegister();
+    } }, navn ? navn(v) : v)));
+}
+
+function søketekst(k) {
+  return [k.navn, k.id, k.grad, k.rolle, k.avdeling, k.lokasjon, ...k.sertifiseringer, ...k.språk,
+    ...k.kompetanse.map((f) => f.ferdighet), ...k.prosjekter.flatMap((p) => [p.kunde, p.bransje, p.rolle, ...p.teknologier]),
+    k.tilgjengelighet?.nåværende_oppdrag?.kunde ?? '', k.tilgjengelighet?.kommentar ?? '']
+    .join(' ').toLowerCase();
+}
+
+function filtrertRegister() {
+  const q = $('reg-sok').value.trim().toLowerCase();
+  const senest = $('reg-dato').value;
+  const minPst = Number($('reg-pst').value);
+  const måHaCv = $('reg-cv').checked;
+  return register.konsulenter.filter((k) => {
+    if (regValg.grad.size && !regValg.grad.has(k.grad)) return false;
+    if (regValg.sted.size && !regValg.sted.has(k.lokasjon)) return false;
+    if (regValg.avd.size && !regValg.avd.has(k.avdeling)) return false;
+    const t = k.tilgjengelighet;
+    if (senest && (!t || t.ledig_fra > senest)) return false;
+    if (minPst && (!t || t.ledig_prosent < minPst)) return false;
+    if (måHaCv && !k.cv) return false;
+    if (q && !(k._søk ??= søketekst(k)).includes(q)) return false;
+    return true;
+  });
+}
+
+function detaljer(k) {
+  const t = k.tilgjengelighet;
+  return h('div', { class: 'reg-detaljer' },
+    h('div', {},
+      h('h4', {}, 'Kompetanse'),
+      h('div', { class: 'kompetanse' }, k.kompetanse.map((f) =>
+        h('span', { title: `Nivå ${f.nivå} av 5` }, f.ferdighet, h('i', {}, [1, 2, 3, 4, 5].map((n) => h('s', { class: n <= f.nivå ? 'på' : '' })))))),
+      h('h4', {}, 'Sertifiseringer'),
+      h('p', {}, k.sertifiseringer.length ? k.sertifiseringer.join(' · ') : 'Ingen registrert'),
+      h('h4', {}, 'Språk'),
+      h('p', {}, k.språk.join(', ')),
+      h('h4', {}, 'Tilgjengelighet'),
+      ledigLinje(t),
+      t?.nåværende_oppdrag && h('p', { class: 'dempet' }, `${t.nåværende_oppdrag.rolle} hos ${t.nåværende_oppdrag.kunde}${t.nåværende_oppdrag.til ? ` til ${kortDato(t.nåværende_oppdrag.til)}` : ''}`)),
+    h('div', {},
+      h('h4', {}, `Prosjekter (${k.prosjekter.length})`),
+      k.prosjekter.length
+        ? h('ul', { class: 'prosjekter' }, k.prosjekter.map((p) =>
+          h('li', {}, h('b', {}, `${p.år} · ${p.kunde}`), ` — ${p.rolle}, ${p.bransje}`, h('span', { class: 'dempet' }, ` · ${p.teknologier.join(', ')}`))))
+        : h('p', { class: 'dempet' }, 'Ingen prosjekthistorikk ennå.'),
+      h('h4', {}, 'CV'),
+      k.cv ? h('div', { class: 'cvtekst' }, miniMarkdown(k.cv)) : h('p', { class: 'dempet' }, 'Ingen CV registrert.')));
+}
+
+function tegnRegister() {
+  if (!register) return;
+  const rader = filtrertRegister();
+  const kol = KOLONNER.find((c) => c.id === regValg.sorter);
+  rader.sort((a, b) => {
+    const x = kol.verdi(a), y = kol.verdi(b);
+    const d = typeof x === 'number' ? x - y : String(x).localeCompare(String(y), 'nb');
+    return (d || a.navn.localeCompare(b.navn, 'nb')) * regValg.retning;
+  });
+
+  const thead = $('reg-tabell').tHead;
+  thead.replaceChildren(h('tr', {}, h('th', { class: 'pil' }), KOLONNER.map((c) => {
+    const aktiv = c.id === regValg.sorter;
+    const th = h('th', { 'aria-sort': aktiv ? (regValg.retning > 0 ? 'ascending' : 'descending') : 'none' });
+    if (c.sorterbar === false) return th.append(c.tittel), th;
+    th.append(h('button', { type: 'button', onclick: () => {
+      if (aktiv) regValg.retning *= -1;
+      else { regValg.sorter = c.id; regValg.retning = c.id === 'ledig_prosent' || c.id === 'prosjekter' || c.id === 'cv' ? -1 : 1; }
+      tegnRegister();
+    } }, c.tittel, aktiv && h('span', { class: 'sort' }, regValg.retning > 0 ? ' ▲' : ' ▼')));
+    return th;
+  })));
+
+  const tbody = $('reg-tabell').tBodies[0];
+  tbody.replaceChildren(...rader.flatMap((k) => {
+    const t = k.tilgjengelighet;
+    const åpen = åpneRader.has(k.id);
+    const ledigNå = t && dato(t.ledig_fra) <= dato(register.idag);
+    const rad = h('tr', { class: `reg-rad${åpen ? ' åpen' : ''}`, tabindex: '0', 'aria-expanded': String(åpen), onclick: () => {
+      åpneRader.has(k.id) ? åpneRader.delete(k.id) : åpneRader.add(k.id);
+      tegnRegister();
+    }, onkeydown: (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.currentTarget.click(); } } },
+      h('td', { class: 'pil' }, '▸'),
+      h('td', {}, h('b', {}, k.navn), h('small', { class: 'dempet' }, ` ${k.id}`)),
+      h('td', {}, h('span', { class: 'grad', style: 'margin:0' }, k.grad)),
+      h('td', {}, k.rolle),
+      h('td', { class: 'dempet' }, k.avdeling),
+      h('td', {}, k.lokasjon),
+      h('td', {}, h('div', { class: 'topp' }, k.kompetanse.slice(0, 3).map((f) => h('span', { class: `nivå n${f.nivå}`, title: `Nivå ${f.nivå} av 5` }, f.ferdighet)))),
+      h('td', { class: ledigNå ? 'ledig-nå' : '' }, t ? (ledigNå ? 'Nå' : kortDato(t.ledig_fra)) : '–',
+        t?.kommentar && h('span', { class: 'merk', title: t.kommentar }, ' ⚠')),
+      h('td', { class: 'tall' }, t ? h('span', { class: `pst ${t.ledig_prosent >= 100 ? 'hel' : t.ledig_prosent > 0 ? 'delvis' : 'opptatt'}` }, `${t.ledig_prosent} %`) : '–'),
+      h('td', { class: 'tall' }, k.prosjekter.length || h('span', { class: 'dempet' }, '0')),
+      h('td', { class: 'tall' }, k.cv ? '📜' : h('span', { class: 'dempet' }, '–')));
+    return åpen ? [rad, h('tr', { class: 'reg-detaljrad' }, h('td', { colspan: KOLONNER.length + 1 }, detaljer(k)))] : [rad];
+  }));
+  $('reg-status').textContent = rader.length === register.konsulenter.length
+    ? `${rader.length} sjeler i registeret`
+    : `${rader.length} av ${register.konsulenter.length} sjeler matcher`;
+}
+
+async function lastRegister() {
+  if (register) return;
+  try {
+    register = await (await fetch('/api/konsulenter')).json();
+  } catch (e) {
+    $('reg-status').textContent = `Kunne ikke lese registeret: ${e.message}`;
+    $('reg-status').classList.add('sjelefeil');
+    return;
+  }
+  const unike = (f) => [...new Set(register.konsulenter.map(f))].sort((a, b) => a.localeCompare(b, 'nb'));
+  chipGruppe($('reg-grad'), GRADER, regValg.grad, (g) => `${g}${g === 'A' ? ' (junior)' : g === 'E' ? ' (senior)' : ''}`);
+  chipGruppe($('reg-sted'), unike((k) => k.lokasjon), regValg.sted);
+  chipGruppe($('reg-avd'), unike((k) => k.avdeling), regValg.avd);
+  for (const id of ['reg-sok', 'reg-dato', 'reg-pst', 'reg-cv']) $(id).addEventListener('input', tegnRegister);
+  $('reg-nullstill').addEventListener('click', () => {
+    $('reg-filtre').reset();
+    $('reg-sok').value = '';
+    for (const s of [regValg.grad, regValg.sted, regValg.avd]) s.clear();
+    for (const b of document.querySelectorAll('#reg-filtre .chip')) b.setAttribute('aria-pressed', 'false');
+    tegnRegister();
+  });
+  tegnRegister();
 }
 
 // ---------- Glør som svever ----------
@@ -405,9 +559,11 @@ for (const [fane, panel] of [['fane-spor', 'panel-spor'], ['fane-kap', 'panel-ka
   })(0);
 })();
 
-// Lenkbare tilstander: /?q=… starter en påkallelse, /?fane=kapasitet åpner tidslinjen.
+// Lenkbare tilstander: /?q=… starter en påkallelse, /?fane=kapasitet åpner tidslinjen,
+// /?fane=register åpner sjeleregisteret.
 {
   const url = new URLSearchParams(location.search);
   if (url.get('fane') === 'kapasitet') $('fane-kap').click();
+  else if (url.get('fane') === 'register') $('fane-reg').click();
   else if (url.get('q')) påkall(url.get('q'));
 }

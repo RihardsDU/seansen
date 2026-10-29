@@ -50,6 +50,7 @@
   <nav class="faner" role="tablist">
     <button role="tab" id="fane-spor" aria-selected="true" aria-controls="panel-spor">Påkallelse</button>
     <button role="tab" id="fane-kap" aria-selected="false" aria-controls="panel-kap">Hvem våkner når?</button>
+    <button role="tab" id="fane-reg" aria-selected="false" aria-controls="panel-reg">Sjeleregisteret</button>
   </nav>
 </header>
 
@@ -73,6 +74,28 @@
       <input id="filter" type="search" placeholder="Filtrer på navn, rolle, sted eller ferdighet …">
     </div>
     <div id="kap-liste"></div>
+  </section>
+
+  <section id="panel-reg" role="tabpanel" aria-labelledby="fane-reg" hidden>
+    <div class="kap-topp">
+      <h2>Alle sjeler i registeret</h2>
+      <label class="skjult" for="reg-sok">Søk</label>
+      <input id="reg-sok" type="search" placeholder="Søk på navn, rolle, ferdighet, sertifisering, kunde …">
+    </div>
+    <form id="reg-filtre" class="filtre" aria-label="Filtre">
+      <fieldset><legend>Grad</legend><div id="reg-grad" class="chips"></div></fieldset>
+      <fieldset><legend>Sted</legend><div id="reg-sted" class="chips"></div></fieldset>
+      <fieldset><legend>Avdeling</legend><div id="reg-avd" class="chips"></div></fieldset>
+      <fieldset class="rad">
+        <legend>Tilgjengelighet</legend>
+        <label>Ledig senest <input id="reg-dato" type="date"></label>
+        <label>Minst <select id="reg-pst"><option value="0">0 %</option><option value="50">50 %</option><option value="80">80 %</option><option value="100">100 %</option></select> ledig</label>
+        <label><input id="reg-cv" type="checkbox"> Har CV</label>
+        <button type="button" id="reg-nullstill">Nullstill</button>
+      </fieldset>
+    </form>
+    <p class="reg-status" id="reg-status" aria-live="polite"></p>
+    <div class="reg-boks"><table id="reg-tabell" class="reg"><thead></thead><tbody></tbody></table></div>
   </section>
 </main>
 
