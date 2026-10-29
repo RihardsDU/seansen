@@ -24,6 +24,12 @@ DEMO=1 npm run web          # scriptet svar uten API-nøkkel, for å se designet
 
 Mørk, grøssende side med séancelogg (verktøykallene live), rangerte «gravstein»-kort med begrunnelse og hva som mangler, teamforslag, tidslinjen «Hvem våkner når?» og en fane med hele flokkens kapasitet. Agenten stiller oppfølgingsspørsmål når behovet er for vagt. Koden ligger i `src/server.js` og `web/`.
 
+**Grøss.** Siden har lyd og skremsler, begge med bryter oppe til høyre (valget huskes i nettleseren):
+
+- Lyden er syntetisert i nettleseren med Web Audio (`web/lyd.js`), ingen lydfiler. Vind og dur i bakgrunnen, hjerteslag som øker mens agenten jobber, hvisking på tanker, klikk på verktøykall, lyn, torden og kirkeklokke når svaret kommer, ond latter når ingen er perfekt match. Nettleseren slipper lyden løs ved første trykk på siden.
+- Skremslene (`web/skrekk.js`): hodeskallen hopper fram tilfeldig etter svar (aldri det første, og minst 90 sekunder mellom hver gang), når du har sittet stille i ett minutt, eller når du skriver «bø» i feltet. Øyne åpner seg i tåka innimellom. Alt er av når systemet ber om redusert bevegelse.
+- Agenten svarer som «Mediet» (se `webSystem` i `src/server.js`): grøsserstil oppå nøyaktige fakta, en gravskrift per kandidat og en avsluttende spådom.
+
 ## Hva ligger her
 
 | Fil | Hva |

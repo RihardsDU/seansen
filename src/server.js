@@ -50,11 +50,13 @@ Foreslå også et team når behovet kan dekkes bedre av flere personer i samspil
                 id: idsKort,
                 treff: { type: 'integer', minimum: 0, maximum: 100, description: 'Hvor godt personen dekker behovet, i prosent.' },
                 begrunnelse: { type: 'string' },
-                mangler: { type: 'string', description: 'Hva som ikke dekkes eller bør sjekkes. Utelat hvis ingenting.' },
+                mangler: { type: 'string', description: 'Hva som ikke dekkes eller bør sjekkes. Nøkternt og konkret. Utelat hvis ingenting.' },
+                gravskrift: { type: 'string', description: 'Én linje på maks 10 ord, som en innskrift på en gravstein om kandidaten. F.eks. «Her hviler en Terraform-mester. Våkner 1. november.»' },
               },
-              required: ['id', 'treff', 'begrunnelse'],
+              required: ['id', 'treff', 'begrunnelse', 'gravskrift'],
             },
           },
+          spaadom: { type: 'string', description: 'Én avsluttende setning i Mediets stemme: et varsel eller råd til brukeren om veien videre.' },
           team: {
             type: 'object',
             description: 'Valgfritt: et helt team som sammen dekker behovet.',
@@ -73,7 +75,7 @@ Foreslå også et team når behovet kan dekkes bedre av flere personer i samspil
             required: ['begrunnelse', 'medlemmer'],
           },
         },
-        required: ['oppsummering', 'kandidater'],
+        required: ['oppsummering', 'kandidater', 'spaadom'],
       },
     },
   },
@@ -107,7 +109,19 @@ Tilleggsregler for webgrensesnittet (de overstyrer reglene over om å ikke spør
 - Er behovet for vagt til å søke på (ingen teknologi, rolle eller fagområde), kall still_oppfolgingssporsmal i stedet.
 - Foreslå et team når behovet gir mening som en gruppe, eller når brukeren ber om det.
 - Sjekk tilgjengelighet for alle du vurderer, og hent CV for toppkandidatene.
-- Tidligere meldinger i samtalen er kontekst: bygg videre på svarene brukeren har gitt.`;
+- Tidligere meldinger i samtalen er kontekst: bygg videre på svarene brukeren har gitt.
+
+Stemme og tone (det er Halloween):
+- Du er Mediet: en séanceleder som kanaliserer konsulentenes ånder fra kompetansegraven. All tekst til brukeren skrives i en mørk,
+  høytidelig og lett humoristisk grøsserstil med graver, ånder, hvisking, tåke, levende lys og måneskinn. Kandidatene «hviler»,
+  «vekkes» og «stiger opp»; oppdrag er «bundet til» en kunde; ledig fra-dato er når de «våkner».
+- Fakta er hellige. Navn, id-er, nivåer, grader, datoer, prosenter og kundenavn skal være nøyaktige og lette å finne i teksten.
+  Metaforene legges oppå innholdet, de erstatter det aldri. Maks én skrekkmetafor per setning. «mangler» skrives nøkternt og konkret.
+- Hver kandidat får en gravskrift: én kort, treffende linje som en gravsteinsinnskrift, maks 10 ord.
+- Avslutt alltid med en spådom: én setning i Mediets stemme med et varsel eller råd til brukeren.
+- Teamnavn skal være grøssende og passende, f.eks. «Skyvokterne» eller «Nattens arkitekter».
+- Oppfølgingsspørsmål stilles som en hvisking fra den andre siden, men selve spørsmålet skal være lett å forstå.
+- Korte tekster underveis, før verktøykall, er dramatiske utbrudd fra Mediet på én setning, f.eks. «Jeg kjenner to ferdigheter i tåka … la meg kalle på dem begge.»`;
 
 const anrikKonsulent = (id) => {
   const k = etterId.get(id);
@@ -180,21 +194,24 @@ async function demo(historikk, send) {
   };
   const tekst = historikk.map((h) => h.tekst).join(' ');
   if (tekst.split(/\s+/).length < 5) {
-    send('sporsmal', { sporsmal: 'Hvilken teknologi eller rolle snakker vi om, og når trenger dere noen?', forslag: ['Backend i Java, fra januar', 'Dataingeniør, så fort som mulig', 'Frontend med React i Bergen'] });
+    send('sporsmal', { sporsmal: 'Tåka er for tett til å se noe … Hvilken teknologi eller rolle kaller dere på, og når skal sjelen våkne?', forslag: ['Backend i Java, fra januar', 'Dataingeniør, så fort som mulig', 'Frontend med React i Bergen'] });
     return;
   }
-  send('tanke', { tekst: 'Behovet gir to ferdigheter, en dato og en minstegrad. Jeg søker på begge og ser hvem som går igjen.' });
+  send('tanke', { tekst: 'Jeg kjenner to ferdigheter i tåka, en dato og en minstegrad … la meg kalle på dem begge og se hvilke sjeler som svarer to ganger.' });
   const a = await kjør('sok_kompetanse', { ferdighet: 'Terraform', min_niva: 3 });
   const b = await kjør('sok_kompetanse', { ferdighet: 'Azure', min_niva: 3 });
   const felles = (a.treff ?? []).filter((x) => (b.treff ?? []).some((y) => y.id === x.id) && x.grad >= 'C').slice(0, 4);
   const ider = felles.map((x) => x.id);
+  send('tanke', { tekst: `${felles.length} sjeler svarte på begge rop. Nå må jeg vite når de våkner.` });
   await kjør('sjekk_tilgjengelighet', { ider });
   await kjør('hent_cv', { id: ider[0] });
+  const gravskrifter = ['Her hviler en skymester. Våkner når november kaller.', 'Bundet til Azure i live, bundet til Azure i døden.', 'Terraform i blodet, tåke i lungene.', 'Stiger opp litt senere enn de andre.'];
   send('svar', { svar: anrikSvar({
-    oppsummering: `Jeg tolket behovet som Terraform og Azure på minst nivå 3, grad C eller høyere, og oppstart fra 1. november. ${felles.length} personer dekker begge. (Demo-modus: dette er et scriptet svar.)`,
+    oppsummering: `Lysene flakket, og tåka delte seg: jeg tolket ropet deres som Terraform og Azure på minst nivå 3, grad C eller høyere, med oppvåkning fra 1. november. ${felles.length} sjeler svarte på begge navn, og de ligger nå rangert foran dere. (Demo-modus: dette er et scriptet svar.)`,
     onsket_start: '2026-11-01',
-    kandidater: felles.map((x, i) => ({ id: x.id, treff: 94 - i * 11, begrunnelse: `Har både Terraform og Azure på høyt nivå og grad ${x.grad}.`, mangler: i === 2 ? 'Ledig først etter ønsket start.' : undefined })),
-    team: felles.length >= 3 ? { navn: 'Skyvokterne', begrunnelse: 'Sammen dekker de plattform, drift og leveranse.', medlemmer: felles.slice(0, 3).map((x, i) => ({ id: x.id, rolle_i_teamet: ['Teknisk leder', 'Plattformingeniør', 'DevOps'][i] })) } : undefined,
+    kandidater: felles.map((x, i) => ({ id: x.id, treff: 94 - i * 11, begrunnelse: `Har både Terraform og Azure på høyt nivå og grad ${x.grad}. Ånden er sterk, og profilen bekrefter det.`, mangler: i === 2 ? 'Ledig først etter ønsket start.' : undefined, gravskrift: gravskrifter[i] })),
+    team: felles.length >= 3 ? { navn: 'Skyvokterne', begrunnelse: 'Sammen vokter de plattform, drift og leveranse fra graven til produksjon.', medlemmer: felles.slice(0, 3).map((x, i) => ({ id: x.id, rolle_i_teamet: ['Teknisk leder', 'Plattformingeniør', 'DevOps'][i] })) } : undefined,
+    spaadom: 'Jeg ser en kalender i tåka: book den første sjelen før månen er full, ellers blir hun bundet til en annen kunde.',
   }) });
 }
 

@@ -1,4 +1,7 @@
 // Seansen: klientsiden. All tekst fra serveren settes med textContent, aldri innerHTML.
+import * as lyd from './lyd.js';
+import * as skrekk from './skrekk.js';
+
 const $ = (id) => document.getElementById(id);
 
 function h(tag, attrs = {}, ...barn) {
@@ -27,6 +30,14 @@ const VERKTØY = {
   lever_svar: ['⚰️', 'Setter sammen svaret'],
   still_oppfolgingssporsmal: ['🦇', 'Hvisker et spørsmål'],
 };
+
+const TRANSE = [
+  '🕯️ Lysene tennes. Mediet faller i transe …',
+  'Bordet begynner å riste …',
+  'Noe rører seg nede i kompetansegraven …',
+  'Kontakt med den andre siden er opprettet …',
+  'Åndene blar i gamle CV-ruller …',
+];
 
 const EKSEMPLER = [
   'Vi trenger noen som kan Terraform og Azure, ledig fra november, helst C-grad eller over',
@@ -110,13 +121,14 @@ function kompetanseChips(k) {
 
 function gravstein(c, i) {
   const k = c.konsulent;
-  return h('article', { class: `gravstein${i === 0 ? ' først' : ''}`, style: `--i:${i}` },
+  return h('article', { class: `gravstein${i === 0 ? ' først' : ''}`, style: `--i:${i}`, onmouseenter: () => Math.random() < 0.2 && lyd.hvisk(0.6) },
     h('div', { class: 'rang', 'aria-label': `Plass ${i + 1}` }, romertall[i + 1] ?? i + 1),
     h('div', { class: 'hode' },
       h('div', {},
         h('h3', { class: 'navn' }, k.navn, h('span', { class: 'grad', title: `Grad ${k.grad}` }, k.grad)),
         h('div', { class: 'rolle' }, `${k.rolle} · ${k.lokasjon}`)),
       h('div', { class: 'ring', style: `--p:${c.treff}`, role: 'img', 'aria-label': `${c.treff} prosent treff` }, h('b', {}, `${c.treff}`))),
+    c.gravskrift && h('p', { class: 'gravskrift' }, c.gravskrift),
     h('p', { class: 'begrunnelse' }, c.begrunnelse),
     c.mangler && h('div', { class: 'mangler' }, h('b', {}, 'Mangler'), c.mangler),
     kompetanseChips(k),
@@ -149,6 +161,7 @@ function svarVisning(svar, idag) {
   const rader = [...(svar.team?.medlemmer ?? []), ...(svar.kandidater ?? [])]
     .map((x) => x.konsulent).filter((k) => k.tilgjengelighet && !ider.has(k.id) && ider.add(k.id));
   if (rader.length) ut.append(h('h2', {}, 'Hvem våkner når?'), tidslinje(rader, idag, { ønsket: svar.onsket_start }));
+  if (svar.spaadom) ut.append(h('div', { class: 'spaadom' }, h('b', {}, 'Åndenes varsel'), svar.spaadom));
   return ut;
 }
 
@@ -218,19 +231,37 @@ async function påkall(tekst) {
   trad.append(agent);
   agent.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
+  // Transen: en hviskende plassholder som skifter til serveren sier noe.
+  lyd.startHjerte();
+  lyd.hvisk(1.2);
+  const transe = h('li', { class: 'tanke' }, TRANSE[0]);
+  logg.legg(transe);
+  let steg = 0;
+  const transeTimer = setInterval(() => { transe.textContent = TRANSE[++steg % TRANSE.length]; }, 2600);
+  const våkn = () => { clearInterval(transeTimer); transe.remove(); };
+
   let agentTekst = null;
   const idag = new Date().toISOString().slice(0, 10);
   try {
     await strøm(historikk, (e) => {
-      if (e.type === 'tanke') logg.tanke(e.tekst);
-      else if (e.type === 'verktoy') logg.verktøy(e.navn, e.input);
-      else if (e.type === 'resultat') logg.resultat(e.ok, e.kort);
+      if (e.type !== 'ferdig') våkn();
+      if (e.type === 'tanke') { logg.tanke(e.tekst); lyd.hvisk(); }
+      else if (e.type === 'verktoy') { logg.verktøy(e.navn, e.input); lyd.tikk(); }
+      else if (e.type === 'resultat') { logg.resultat(e.ok, e.kort); if (e.ok) lyd.plink(); else { lyd.surr(); skrekk.lyn('rød'); } }
       else if (e.type === 'svar') {
         logg.ferdig();
+        lyd.stoppHjerte();
+        skrekk.lyn();
+        lyd.torden();
+        lyd.klokke();
         agent.append(svarVisning(e.svar, idag));
         agentTekst = sammendragAvSvar(e.svar);
+        if (e.svar.ingen_perfekt_match) setTimeout(() => lyd.latter(), 1400);
+        setTimeout(() => skrekk.kanskjeSkrem(0.35), 2200);
       } else if (e.type === 'sporsmal') {
         logg.ferdig();
+        lyd.stoppHjerte();
+        lyd.hvisk(2.2);
         agent.append(h('div', { class: 'spørsmål' },
           h('div', { class: 'hvisk' }, 'Séancen hvisker tilbake'),
           h('p', {}, e.sporsmal),
@@ -238,13 +269,21 @@ async function påkall(tekst) {
         agentTekst = e.sporsmal;
       } else if (e.type === 'feil') {
         logg.ferdig();
+        lyd.stoppHjerte();
+        lyd.surr();
+        skrekk.lyn('rød');
         agent.append(h('div', { class: 'sjelefeil' }, `Séancen ble avbrutt: ${e.melding}`));
       }
     });
   } catch (e) {
+    våkn();
     logg.ferdig();
+    lyd.stoppHjerte();
+    lyd.surr();
+    skrekk.lyn('rød');
     agent.append(h('div', { class: 'sjelefeil' }, `Kunne ikke nå åndeverdenen: ${e.message}`));
   }
+  lyd.stoppHjerte();
   if (agentTekst) historikk.push({ rolle: 'agent', tekst: agentTekst });
   else historikk.pop(); // mislyktes: la brukeren prøve igjen uten å forurense historikken
   opptatt = false;
@@ -266,14 +305,43 @@ $('skjema').addEventListener('submit', (e) => {
 $('behov').addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); $('skjema').requestSubmit(); }
 });
+// Påskeegg: skriv «bø» (eller «boo») i feltet.
+$('behov').addEventListener('input', (e) => {
+  if (/^(bø+|boo+)!?$/i.test(e.target.value.trim()) && skrekk.skrem({ tving: true })) e.target.value = '';
+});
 $('ny').addEventListener('click', () => {
   if (opptatt) return;
+  lyd.knirk();
   historikk = [];
   $('trad').replaceChildren();
   $('ny').hidden = true;
   visEksempler();
 });
 visEksempler();
+
+// ---------- Brytere for lyd og skremsler ----------
+{
+  const lydKnapp = $('lydbryter');
+  const tegnLyd = (v) => {
+    lydKnapp.setAttribute('aria-pressed', String(v));
+    lydKnapp.querySelector('.ikon').textContent = v ? '🔊' : '🔇';
+    lydKnapp.classList.toggle('sover', v && !lyd.lydErVåken());
+    lydKnapp.title = v && !lyd.lydErVåken() ? 'Lyden våkner ved første trykk' : 'Slå lyden av eller på';
+  };
+  lyd.vedLydEndring(tegnLyd);
+  tegnLyd(lyd.lydErPå());
+  lydKnapp.addEventListener('click', () => lyd.settLyd(!lyd.lydErPå()));
+
+  const skrekkKnapp = $('skrekkbryter');
+  const tegnSkrekk = (v) => skrekkKnapp.setAttribute('aria-pressed', String(v));
+  skrekk.vedSkrekkEndring(tegnSkrekk);
+  tegnSkrekk(skrekk.skrekkErPå());
+  if (!skrekk.skrekkErMulig()) { skrekkKnapp.disabled = true; skrekkKnapp.title = 'Av fordi systemet ber om redusert bevegelse'; }
+  skrekkKnapp.addEventListener('click', () => skrekk.settSkrekk(!skrekk.skrekkErPå()));
+
+  skrekk.startØyne();
+  skrekk.startLurer();
+}
 
 // ---------- Faner og kapasitet ----------
 let kapasitet = null;
