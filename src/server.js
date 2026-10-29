@@ -15,8 +15,10 @@ const lesJson = (fil) => JSON.parse(fs.readFileSync(path.join(ROT, 'data', fil),
 
 const konsulenter = lesJson('konsulenter.json');
 const tilgjengelighet = lesJson('tilgjengelighet.json');
+const prosjekthistorikk = lesJson('prosjekthistorikk.json');
 const etterId = new Map(konsulenter.map((k) => [k.id, k]));
 const tilgEtterId = new Map(tilgjengelighet.map((t) => [t.id, t]));
+const histEtterId = new Map(prosjekthistorikk.map((p) => [p.konsulent_id, p.prosjekter]));
 
 const idsKort = {
   type: 'string',
@@ -136,6 +138,21 @@ const anrikSvar = (u) => ({
     }),
   },
 });
+
+// Hele registeret til oversiktsfanen: profil, tilgjengelighet, prosjekter og CV
+// i én respons, så siden kan filtrere og sortere lokalt.
+const register = () =>
+  konsulenter.map((k) => {
+    const prosjekter = [...(histEtterId.get(k.id) ?? [])].sort((a, b) => b.år - a.år);
+    return {
+      id: k.id, navn: k.navn, grad: k.grad, rolle: k.rolle, avdeling: k.avdeling, lokasjon: k.lokasjon,
+      sertifiseringer: k.sertifiseringer, språk: k.språk,
+      kompetanse: [...k.kompetanse].sort((a, b) => b.nivå - a.nivå),
+      tilgjengelighet: tilgEtterId.get(k.id) ?? null,
+      prosjekter,
+      cv: anrikKonsulent(k.id)?.cv ?? null,
+    };
+  });
 
 const kapasitet = () =>
   konsulenter.map((k) => ({
@@ -266,6 +283,10 @@ http
     if (req.method === 'POST' && url.pathname === '/api/spor') return spor(req, res);
     if (req.method === 'GET' && url.pathname === '/api/kapasitet') {
       res.writeHead(200, { 'Content-Type': 'application/json' }).end(JSON.stringify({ idag: idag(), konsulenter: kapasitet() }));
+      return;
+    }
+    if (req.method === 'GET' && url.pathname === '/api/konsulenter') {
+      res.writeHead(200, { 'Content-Type': 'application/json' }).end(JSON.stringify({ idag: idag(), konsulenter: register() }));
       return;
     }
     if (req.method === 'GET' && url.pathname === '/api/eksempel') {

@@ -74,3 +74,4 @@ Dataene er ren JSON og markdown. Ta med `data/`-mappa og bygg løkka i det språ
 - `finn_prosjekthistorikk`: tidligere prosjekter for én konsulent, nyeste først. Gir egen beskjed hvis historikk mangler.
 - `sok_prosjekter`: søker i alles prosjekthistorikk på bransje og/eller teknologi. Gjør at behov som `npm start -- "Vi trenger noen med erfaring fra helsesektoren"` fungerer.
 - Systemprompt: henter CV og prosjekthistorikk for toppkandidatene, og svarer uten å stille oppfølgingsspørsmål.
+- Fanen «Sjeleregisteret» i webgrensesnittet: tabell over alle 80 konsulenter med fritekstsøk, filter på grad, sted, avdeling, ledig-senest-dato, ledig prosent og CV, sorterbare kolonner og utvidbar rad med kompetanse, sertifiseringer, prosjekter og CV. Data fra `GET /api/konsulenter`. Åpnes direkte med `/?fane=register`.
