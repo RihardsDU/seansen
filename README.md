@@ -57,3 +57,10 @@ Dataene er ren JSON og markdown. Ta med `data/`-mappa og bygg løkka i det språ
 - Vis verktøykallene i demoen. Det er der publikum ser at agenten faktisk jobber.
 - `MAX_ITERASJONER` i `.env` stopper en agent som går i ring (standard 10).
 - `.env` committes aldri. Den står i `.gitignore`, la den bli der.
+
+## Lagt til
+
+- `sjekk_tilgjengelighet`: ledig fra-dato, prosent og nåværende oppdrag for en liste id-er. Ukjente id-er listes separat.
+- `hent_cv`: henter CV-en som markdown. Id-en valideres, og mangler CV-en, får modellen beskjed om det.
+- `finn_prosjekthistorikk`: tidligere prosjekter for én konsulent, nyeste først. Gir egen beskjed hvis historikk mangler.
+- Systemprompt: henter CV og prosjekthistorikk for toppkandidatene, og svarer uten å stille oppfølgingsspørsmål.
