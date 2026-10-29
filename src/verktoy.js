@@ -9,13 +9,14 @@ const lesJson = (fil) => JSON.parse(fs.readFileSync(path.join(DATA, fil), 'utf8'
 
 const konsulenter = lesJson('konsulenter.json');
 const tilgjengelighet = lesJson('tilgjengelighet.json');
+const prosjekthistorikk = lesJson('prosjekthistorikk.json');
 
 export const system = `Du er bemanningsagenten i et konsulentselskap med kontorer i Oslo, Bergen, Trondheim og Stavanger.
 Du får et behov i naturlig språk og skal finne de beste kandidatene.
 
 - Bryt behovet ned i konkrete søk (ferdigheter, tidspunkt, grad, lokasjon) før du slår opp.
 - Gjør flere oppslag og sjekk det du kan, ikke stol på ett søk.
-- Hent CV for de øverste kandidatene før du anbefaler dem, og si fra hvis CV og profil spriker.
+- Hent CV og prosjekthistorikk for de øverste kandidatene før du anbefaler dem, og si fra hvis de spriker med profilen.
 - Du får ikke svar fra brukeren underveis. Ikke spør om du skal gjøre mer, gjør det du trenger før du svarer.
 - Svar med en rangert liste der hver kandidat har en kort begrunnelse.
 - Finner du ingen perfekt match, foreslå nest beste og si tydelig hva som mangler.
@@ -123,8 +124,15 @@ Juniorer har ofte ingen historikk ennå.`,
         required: ['id'],
       },
     },
-    // TODO: slå opp i data/prosjekthistorikk.json på konsulent_id. Vurder om
-    // verktøyet heller bør søke på teknologi eller bransje på tvers av alle.
-    kjør: null,
+    kjør: async ({ id }) => {
+      const renId = typeof id === 'string' ? id.trim().toLowerCase() : '';
+      if (!konsulenter.some((k) => k.id === renId)) {
+        throw new Error(`Ukjent id «${id}». Bruk en id fra sok_kompetanse, f.eks. {"id": "k007"}.`);
+      }
+      const historikk = prosjekthistorikk.find((p) => p.konsulent_id === renId);
+      if (!historikk?.prosjekter.length) return `Ingen prosjekthistorikk for ${renId}. Vanlig for juniorer.`;
+      // Nyeste først, så det mest relevante kommer øverst.
+      return { id: renId, prosjekter: [...historikk.prosjekter].sort((a, b) => b.år - a.år) };
+    },
   },
 ];
