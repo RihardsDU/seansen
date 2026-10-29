@@ -15,6 +15,8 @@ Du får et behov i naturlig språk og skal finne de beste kandidatene.
 
 - Bryt behovet ned i konkrete søk (ferdigheter, tidspunkt, grad, lokasjon) før du slår opp.
 - Gjør flere oppslag og sjekk det du kan, ikke stol på ett søk.
+- Hent CV for de øverste kandidatene før du anbefaler dem, og si fra hvis CV og profil spriker.
+- Du får ikke svar fra brukeren underveis. Ikke spør om du skal gjøre mer, gjør det du trenger før du svarer.
 - Svar med en rangert liste der hver kandidat har en kort begrunnelse.
 - Finner du ingen perfekt match, foreslå nest beste og si tydelig hva som mangler.
 - Si fra hvis du ikke har verktøy til å sjekke noe som betyr noe for svaret.
@@ -89,6 +91,7 @@ Merk at noen bare er delvis ledige, og at enkelte har en kommentar som begrenser
     definisjon: {
       name: 'hent_cv',
       description: `Henter CV-sammendraget til én konsulent som markdown.
+Bruk den på toppkandidatene for å bekrefte erfaringen før du anbefaler dem. Du kan hente flere CV-er i samme runde.
 Ikke alle har CV. Mangler den, får du beskjed om det, og da må du klare deg med profilen og prosjekthistorikken.
 CV-en kan være mer oppdatert, eller mindre, enn kompetanseprofilen. Si fra hvis de spriker.`,
       input_schema: {
@@ -97,10 +100,16 @@ CV-en kan være mer oppdatert, eller mindre, enn kompetanseprofilen. Si fra hvis
         required: ['id'],
       },
     },
-    // TODO: les data/cv/<id>.md. Fila finnes ikke for alle; returner en tydelig
-    // tekst («Ingen CV for k041») i stedet for å kaste. Valider id-en, så ingen
-    // kan be om «../../.env».
-    kjør: null,
+    kjør: async ({ id }) => {
+      const renId = typeof id === 'string' ? id.trim().toLowerCase() : '';
+      // Bare id-er på formen k + tre sifre, så ingen kan be om «../../.env».
+      if (!/^k\d{3}$/.test(renId)) {
+        throw new Error(`Ugyldig id «${id}». Bruk en id fra sok_kompetanse, f.eks. {"id": "k007"}.`);
+      }
+      const fil = path.join(DATA, 'cv', `${renId}.md`);
+      if (!fs.existsSync(fil)) return `Ingen CV for ${renId}. Bruk profilen og prosjekthistorikken i stedet.`;
+      return fs.readFileSync(fil, 'utf8');
+    },
   },
   {
     definisjon: {
