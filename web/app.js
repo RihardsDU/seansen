@@ -27,6 +27,9 @@ const VERKTØY = {
   sjekk_tilgjengelighet: ['⏳', 'Spør hvem som kan vekkes'],
   hent_cv: ['📜', 'Leser CV-ruller'],
   finn_prosjekthistorikk: ['🕯️', 'Graver i prosjektgravene'],
+  sok_prosjekter: ['🗝️', 'Leter i prosjektgravene'],
+  tidslinje_kapasitet: ['🕰️', 'Leser oppvåkningskalenderen'],
+  sett_sammen_team: ['🧟', 'Vekker et helt lag'],
   lever_svar: ['⚰️', 'Setter sammen svaret'],
   still_oppfolgingssporsmal: ['🦇', 'Hvisker et spørsmål'],
 };
@@ -175,7 +178,7 @@ function nyLogg() {
     verktøy(navn, input) {
       const [ikon, tekst] = VERKTØY[navn] ?? ['✦', navn];
       const arg = Object.entries(input ?? {}).filter(([k]) => !['oppsummering', 'kandidater', 'team'].includes(k))
-        .map(([k, v]) => `${k}: ${Array.isArray(v) ? v.join(', ') : v}`).join(' · ');
+        .map(([k, v]) => `${k}: ${Array.isArray(v) ? v.map((x) => (x && typeof x === 'object' ? x.rolle ?? JSON.stringify(x) : x)).join(', ') : v}`).join(' · ');
       this.legg(h('li', {}, `${ikon} ${tekst}`, arg && h('span', { class: 'arg' }, ` — ${arg}`)));
     },
     resultat(ok, kort) {

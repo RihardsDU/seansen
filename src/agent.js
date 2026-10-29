@@ -16,7 +16,8 @@ const grønn = (t) => `\x1b[32m${t}\x1b[0m`;
 // `på` er valgfritt (brukes av webserveren): { tekst, verktøy, resultat }.
 // Uten `på` skrives alt til terminalen. Et verktøy med `avslutt: true` er en
 // leveranse: kjøringen stopper når modellen kaller det, og input returneres
-// som `utfall`.
+// som `utfall` sammen med `id` (tool_use-id) og `meldinger` (samtalen så
+// langt), så den som kaller kan svare på verktøykallet og kjøre videre.
 export async function kjørAgent({ system, oppgave, meldinger, verktøy, på }) {
   // Bare verktøy med en kjør-funksjon sendes til modellen. Stubbene i
   // verktoy.js blir med av seg selv når dere implementerer dem.
@@ -64,7 +65,7 @@ export async function kjørAgent({ system, oppgave, meldinger, verktøy, på }) 
       const v = etterNavn.get(k.name);
       if (v?.avslutt) {
         på?.verktøy?.(k.name, k.input);
-        return { utfall: k.input, verktøy: k.name };
+        return { utfall: k.input, verktøy: k.name, id: k.id, meldinger: messages };
       }
       if (på) på.verktøy?.(k.name, k.input);
       else console.log(oransje(`→ ${k.name}`) + grå(` ${JSON.stringify(k.input)}`));

@@ -6,7 +6,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { kjørAgent } from './agent.js';
-import { system, eksempelOppgave, verktøy } from './verktoy.js';
+import { system, eksempelOppgave, verktøy, oppfølging, regelOppfølging, idag } from './verktoy.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 const ROT = path.join(import.meta.dirname, '..');
@@ -79,35 +79,17 @@ Foreslå også et team når behovet kan dekkes bedre av flere personer i samspil
       },
     },
   },
-  {
-    avslutt: true,
-    kjør: async () => 'mottatt', // kjøres aldri, men agent.js sender bare verktøy med kjør
-    definisjon: {
-      name: 'still_oppfolgingssporsmal',
-      description: `Stiller brukeren ett oppfølgingsspørsmål i stedet for å søke. Bruk den BARE når behovet er så vagt at søk ville
-vært gjetting (f.eks. «vi trenger en utvikler» uten teknologi, rolle eller tidspunkt). Er det nok til å gjøre et fornuftig første søk,
-søk heller, og nevn antakelsene dine i oppsummeringen.`,
-      input_schema: {
-        type: 'object',
-        properties: {
-          sporsmal: { type: 'string', description: 'Ett konkret spørsmål, på norsk.' },
-          forslag: { type: 'array', items: { type: 'string' }, maxItems: 4, description: 'Korte svaralternativer brukeren kan trykke på.' },
-        },
-        required: ['sporsmal'],
-      },
-    },
-  },
+  oppfølging, // delt med terminalversjonen, se verktoy.js
 ];
 
-const idag = () => new Date().toISOString().slice(0, 10);
-
 const webSystem = () => `${system}
+${regelOppfølging}
 
-Tilleggsregler for webgrensesnittet (de overstyrer reglene over om å ikke spørre):
-- I dag er ${idag()}. Tolk «fra november» o.l. ut fra den datoen.
-- Du leverer svaret ved å kalle lever_svar. Skriv ikke svaret som vanlig tekst.
-- Er behovet for vagt til å søke på (ingen teknologi, rolle eller fagområde), kall still_oppfolgingssporsmal i stedet.
-- Foreslå et team når behovet gir mening som en gruppe, eller når brukeren ber om det.
+Tilleggsregler for webgrensesnittet:
+- Du leverer svaret ved å kalle lever_svar. Skriv ikke svaret som vanlig tekst. Oppfølgingsspørsmål stilles med still_oppfolgingssporsmal.
+- Foreslå et team (feltet «team» i lever_svar) når behovet gir mening som en gruppe, eller når brukeren ber om det. Bruk sett_sammen_team
+  for å finne medlemmene, og ta med felles startdato og advarslene i begrunnelsen.
+- Siden tegner selv tidslinjen «Hvem våkner når?» for kandidatene og teamet, så du trenger ikke gjengi tegningen fra tidslinje_kapasitet.
 - Sjekk tilgjengelighet for alle du vurderer, og hent CV for toppkandidatene.
 - Tidligere meldinger i samtalen er kontekst: bygg videre på svarene brukeren har gitt.
 
@@ -178,6 +160,11 @@ const forhåndsvisning = (r) => {
     if (o.antall_treff != null) return `${o.antall_treff} treff`;
     if (o.resultater) return `${o.resultater.length} tilgjengelighetsoppslag`;
     if (o.prosjekter) return `${o.prosjekter.length} prosjekter`;
+    if (o.grupper) return `${o.viser} av ${o.antall} på tidslinjen ${o.periode.fra} – ${o.periode.til}`;
+    if (o.forslag?.medlemmer) {
+      const m = o.forslag.medlemmer.length;
+      return m ? `team på ${m}, felles start ${o.forslag.felles_start}${o.forslag.advarsler.length ? `, ${o.forslag.advarsler.length} advarsler` : ''}` : 'ingen kandidater til rollene';
+    }
   } catch { /* ikke JSON, f.eks. CV-tekst */ }
   return t.startsWith('#') ? 'CV funnet' : t.slice(0, 90);
 };
