@@ -264,7 +264,7 @@ async function påkall(tekst) {
           setTimeout(() => skrekk.hånd(innerWidth * 0.3), 1700);
           setTimeout(() => skrekk.hånd(innerWidth * 0.7), 2100);
         }
-        setTimeout(() => skrekk.kanskjeSkrem(0.35), 2200);
+        setTimeout(() => skrekk.kanskjeSkrem(0.6), 2200);
       } else if (e.type === 'sporsmal') {
         logg.ferdig();
         lyd.stoppHjerte();

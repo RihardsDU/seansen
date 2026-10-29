@@ -10,7 +10,7 @@ let på = !rolig && localStorage.getItem('seansen-skrekk') !== 'av';
 let sist = 0;
 let antallSvar = 0;
 let antallSkrem = 0;
-const PAUSE = 90_000; // minst halvannet minutt mellom hvert hopp
+const PAUSE = 40_000; // minst 40 sekunder mellom hvert hopp
 const lyttere = new Set();
 
 export const skrekkErPå = () => på;
@@ -123,7 +123,7 @@ export function startSmåskrekk() {
   const plan = () => setTimeout(() => {
     if (på && synlig()) [hånd, edderkopp, spøkelse][Math.floor(Math.random() * 3)]();
     plan();
-  }, 25_000 + Math.random() * 40_000);
+  }, 10_000 + Math.random() * 15_000);
   plan();
 }
 
@@ -142,7 +142,7 @@ export function startØyne() {
   const plan = () => setTimeout(() => {
     if (på && synlig()) visØyne(vert);
     plan();
-  }, 15_000 + Math.random() * 35_000);
+  }, 8_000 + Math.random() * 17_000);
   plan();
 }
 function visØyne(vert) {
@@ -157,7 +157,7 @@ function visØyne(vert) {
 }
 
 // Lureren: sitter brukeren stille lenge nok, slår graven til.
-export function startLurer(ms = 60_000) {
+export function startLurer(ms = 35_000) {
   if (rolig) return;
   let timer;
   const nullstill = () => {
